@@ -1,0 +1,169 @@
+{
+    "version": 1,
+    "settings": {
+        "color": {
+            "custom": false,
+            "customGradient": false,
+            "gradients": [],
+            "link": false,
+            "palette": [
+                {
+                    "name": "Primary pure",
+                    "slug": "primary-pure",
+                    "color": "#1DACE4"
+                },
+                {
+                    "name": "Primary light",
+                    "slug": "primary-light",
+                    "color": "#C2ECFB"
+                },
+                {
+                    "name": "Primary dark",
+                    "slug": "primary-dark",
+                    "color": "#007CB8"
+                },
+                {
+                    "name": "Secondary pure",
+                    "slug": "secondary-pure",
+                    "color": "#333333"
+                },
+                {
+                    "name": "Secondary light",
+                    "slug": "secondary-light",
+                    "color": "#C9C9C9"
+                },
+                {
+                    "name": "Secondary dark",
+                    "slug": "secondary-dark",
+                    "color": "#111111"
+                },
+                {
+                    "name": "Highlight pure",
+                    "slug": "highlight-pure",
+                    "color": "#CCCC33"
+                },
+                {
+                    "name": "Highlight light",
+                    "slug": "highlight-light",
+                    "color": "#FFFF68"
+                },
+                {
+                    "name": "Highlight dark",
+                    "slug": "highlight-dark",
+                    "color": "#59631E"
+                },
+                {
+                    "name": "Low Pure",
+                    "slug": "low-pure",
+                    "color": "#000000"
+                },
+                {
+                    "name": "Low light",
+                    "slug": "low-light",
+                    "color": "#666666"
+                },
+                {
+                    "name": "Low dark",
+                    "slug": "low-dark",
+                    "color": "#333333"
+                },
+                {
+                    "name": "High pure",
+                    "slug": "high-pure",
+                    "color": "#FFFFFF"
+                },
+                {
+                    "name": "High light",
+                    "slug": "high-light",
+                    "color": "#F5F5F5"
+                },
+                {
+                    "name": "High dark",
+                    "slug": "high-dark",
+                    "color": "#DDDDDD"
+                },
+                {
+                    "name": "Warning pure",
+                    "slug": "warning-pure",
+                    "color": "#FF358B"
+                },
+                {
+                    "name": "Warning light",
+                    "slug": "warning-light",
+                    "color": "#FF72BB"
+                },
+                {
+                    "name": "Warning dark",
+                    "slug": "warning-dark",
+                    "color": "#C6005E"
+                },
+                {
+                    "name": "Helper pure",
+                    "slug": "helper-pure",
+                    "color": "#29D9C2"
+                },
+                {
+                    "name": "Helper light",
+                    "slug": "helper-light",
+                    "color": "#70FFF5"
+                },
+                {
+                    "name": "Helper dark",
+                    "slug": "helper-dark",
+                    "color": "#00A792"
+                }
+            ]
+        },
+        "spacing": {
+            "customPadding": true,
+            "customMargin": true,
+            "units": [ "px", "em", "rem", "vh", "vw", "%" ]
+        },
+        "typography": {
+            "customFontSize": false,
+            "customLineHeight": false,
+            "dropCap": false,
+            "fontSizes": [
+                {
+                    "name": "Muito pequena",
+                    "slug": "xxxs",
+                    "size": "0.75rem"
+                },
+                {
+                    "name": "Pequena",
+                    "slug": "small",
+                    "size": "0.875rem"
+                },
+                {
+                    "name": "Padrão",
+                    "slug": "default",
+                    "size": "1rem"
+                },
+                {
+                    "name": "Padrão intermediário",
+                    "slug": "intermediate-standard",
+                    "size": "1.125rem"
+                },
+                {
+                    "name": "Média",
+                    "slug": "medium",
+                    "size": "1.5rem"
+                },
+                {
+                    "name": "Grande",
+                    "slug": "large",
+                    "size": "2rem"
+                },
+                {
+                    "name": "Muito grande",
+                    "slug": "really-large",
+                    "size": "3rem"
+                }
+            ]
+        },
+        "layout": {
+            "contentSize": "1170px",
+            "wideSize": "1170px"
+        }
+    }
+}

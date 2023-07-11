@@ -1,0 +1,18 @@
+php_value upload_max_filesize 2000M
+php_value post_max_size 2000M
+LimitRequestBody 102400000000
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^wp-content\/uploads\/?(.*)$ "https\:\/\/desinformante.com.br\/wp-content\/uploads\/$1" [R=302,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress

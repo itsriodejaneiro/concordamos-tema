@@ -1,0 +1,14 @@
+**/dist
+**/node_modules
+wp-content/*
+wp-content/themes/*
+wp-content/plugins/*
+wp-content/upgrade/*
+wp-content/uploads/*
+wp-content/mu-plugins/*
+wp-content/languages/*
+*.sql
+*.zip
+mariadb_data/
+mix-manifest.json
+wp-root

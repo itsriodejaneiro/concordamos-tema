@@ -1,0 +1,8 @@
+.git/
+mariadb_data/
+mariadb_data/*
+themes/concordamos/node_modules/
+*.sql*
+themes/concordamos/dist/app.js
+themes/concordamos/dist/app.css
+
