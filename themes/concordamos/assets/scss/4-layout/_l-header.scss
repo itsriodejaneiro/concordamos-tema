@@ -1,5 +1,5 @@
-@import "./../1-settings/_s-variables";
-@import "./../2-atoms/a-mixins";
+@use "./../1-settings/_s-variables" as variables;
+@use "./../2-atoms/a-mixins" as mixins;
 
 header{
     &.main-header {
@@ -10,7 +10,14 @@ header{
         width: 100%;
         transition: all .5s;
         background-color: var(--header-background-color);
+        border-bottom: 2px solid var(--wp--preset--color--low-pure);
 
+        .container{
+            max-height: size(74);
+            max-width: size(1170);
+            width: 100%;
+        }
+        
         .logged-in & {
             top: 32px;
 
@@ -37,7 +44,8 @@ header{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            min-height: 100px;
+            
+
 
             .logo {
                 @media (min-width: 1025px) and (max-width: 1199px) {
@@ -105,7 +113,7 @@ header{
 
         .menus {
             display: flex;
-            margin-top: 6px;
+            
 
             @media (max-width: $desktop-width) {
                 display: none;
@@ -148,6 +156,7 @@ header{
                 }
                 ul.menu {
                     padding-left: 0;
+                    margin-top: size(10);
 
                     > li {
                         margin-right: 15px;
@@ -217,8 +226,9 @@ header{
 
                         }
                         a{
-                            color: #333333;
-
+                            color: var(--wp--preset--color--low-pure);
+                            text-decoration: none;
+                            font-weight: 500 !important;
                         }
                     }
                 }
