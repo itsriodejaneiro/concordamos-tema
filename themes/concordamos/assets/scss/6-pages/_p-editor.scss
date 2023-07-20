@@ -1,0 +1,21 @@
+@use "./../2-atoms/a-mixins" as mixins;
+@use "./../1-settings/s-variables" as variables;
+
+body{
+    &.block-editor-page{
+        #widgets-editor{
+            .block-editor-block-list__layout{
+                background-color: var(--wp--preset--color--low-dark);
+                .block-editor-block-list__block{
+                    p{
+                        color: var(--wp--preset--color--high-pure);
+                        a{
+                            color: var(--wp--preset--color--high-pure);
+                            text-decoration: none;
+                       }
+                    }
+                }      
+            }
+        }
+    }
+}

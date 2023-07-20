@@ -2,5 +2,39 @@
 @use "./../2-atoms/a-mixins" as mixins;
 
 footer.main-footer {
-    background-color: var(--wp--preset--color--low-pure);
+    background-color: #000;
+    .wp-block-cover__inner-container{
+        max-width: 1170px;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    p, a{
+        color: #fff !important ;
+    }
+    .footer-logo{
+        margin: 30px 0 35px 0;    
+    }
+    .footer-menu{
+        margin-top: 30px;
+       p{
+        margin-bottom: 20px;
+       }
+    }
+    .social-icons{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include mixins.tablet{
+        .footer-logo-column {
+            text-align: center;
+        }
+        .footer-menu{
+           text-align: center;
+            .footer-menu-second-column{
+                margin-top: -20px;
+            }
+        }  
+    }
 }
