@@ -127,7 +127,7 @@
                 {
                     "name": "Padrão intermediário",
                     "slug": "intermediate-standard",
-                    "size": "1.125rem"
+                    "size": "1.25rem"
                 },
                 {
                     "name": "Média",
@@ -140,15 +140,35 @@
                     "size": "2rem"
                 },
                 {
+                    "name": "Meio grande",
+                    "slug": "intermediate-large",
+                    "size": "2.5rem"
+                },
+                {
                     "name": "Muito grande",
                     "slug": "really-large",
                     "size": "3rem"
+                },
+                {
+                    "name": "Muito grande",
+                    "slug": "so-large",
+                    "size": "4rem"
+                },
+                {
+                    "name": "Muito grande",
+                    "slug": "bigger",
+                    "size": "5rem"
+                },
+                {
+                    "name": "Gigante",
+                    "slug": "giant",
+                    "size": "6rem"
                 }
             ]
         },
         "layout": {
-            "contentSize": "1170px",
-            "wideSize": "1170px"
+            "contentSize": "1200px",
+            "wideSize": "1200px"
         }
     }
 }

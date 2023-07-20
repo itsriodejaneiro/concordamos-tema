@@ -3,11 +3,23 @@
 
 .home {
     #app{
+        .wp-block-cover__inner-container{
+            max-width: 1170px;
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
         .power{
-            background-color: #FF73E7;
+            background-color: var(--wp--preset--color--secondary-pure);
         }
         .participation{
-            background-color: #EDE103;    
+            background-color: var(--wp--preset--color--primary-pure);    
+        }
+        .mobiles-columns{
+            background-color: var(--wp--preset--color--helper-pure);
+        }
+        .create-vote{
+            background-color: var(--wp--preset--color--high-light);    
         }
     }
 }

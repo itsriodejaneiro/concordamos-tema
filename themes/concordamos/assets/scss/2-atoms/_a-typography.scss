@@ -1,74 +1,120 @@
-html {
+html{
     font-size: var(--s-html);
 }
 
 body {
-    font-family: $f_body
+	color: var(--wp--preset--color--low-dark);
+	font-family: $f_body;
+	line-height: 1.6;
+
+	.content {
+		// Headings
+		h1:not(.has-text-color),
+		h2:not(.has-text-color),
+		h3:not(.has-text-color),
+		h4:not(.has-text-color),
+		h5:not(.has-text-color),
+		h6:not(.has-text-color) {
+			color: var(--wp--preset--color--low-dark);
+		}
+	}
+}
+
+a {
+	color:var(--wp--preset--color--low-dark);
+	text-decoration: none;
+
+	&:hover {
+		color: var(--wp--preset--color--low-dark);
+		text-decoration: none;
+	}
+
+	> * {
+		text-decoration: none;
+	}
+
+	&:where(:not(.wp-element-button)) {
+		text-decoration: none !important;
+	}
 }
 
 h1 {
-    font-size: 2.5rem;
+	color: var(--wp--preset--color--low-dark);
+	font-family: $f_title;
+	font-size: var(--wp--preset--font-size--bigger);
+	font-weight: 600;
+    text-transform: uppercase;
 
-    @include mobile {
-        font-size: 1.5rem;
-    }
+	@include mobile {
+		font-size: var(--wp--preset--font-size--large);
+	}
 }
 
 h2 {
-    font-size: 2rem;
+	color: var(--wp--preset--color--low-dark);
+	font-family: $f_title;
+	font-size: var(--wp--preset--font-size--really-large);
+	font-weight: 600;
+    text-transform: uppercase;
 
-    @include mobile {
-        font-size: 1.5rem;
-    }
+	@include mobile {
+		font-size: var(--wp--preset--font-size--medium);
+	}
 }
 
 h3 {
-    font-size: var(--s-h3);
-    font-weight: 400;
+	color: var(--wp--preset--color--low-dark);
+	font-family: $f_body;
+	font-size: var(--wp--preset--font-size--large);
+	font-weight: 400;
+    text-transform: uppercase;
 
-    @include tablet {
-        font-size: 36px;
-    }
-
-    @include mobile {
-        font-size: 32px;
-    }
-
-    @include small {
-        font-size: 26px;
-    }
+	@include mobile {
+		font-size: var(--wp--preset--font-size--intermediate-standard);
+	}
 }
 
-
 h4 {
-    /*font-size: 1rem;*/
-    font-size: var(--s-h4);
+	color: var(--wp--preset--color--low-dark);
+	font-family: $f_body;
+	font-size: var(--wp--preset--font-size--intermediate-standard);
+	font-weight: 400;
+    text-transform: uppercase;
 
-    @include mobile {
-        font-size: 0.85rem;
-    }
+	@include mobile {
+		font-size: var(--wp--preset--font-size--small);
+	}
 }
 
 h5 {
-    font-size: var(--s-h5);
-    line-height: calc(var(--s-h5) * 1.2);
+	color: var(--wp--preset--color--low-dark);
+	font-family: $f_body;
+	font-size: var(--wp--preset--font-size--default);
+	font-weight: 600;
+    text-transform: uppercase;
+
+	@include mobile {
+		font-size: var(--wp--preset--font-size--xxxs);
+	}
 }
 
 h6 {
-    font-size: var(--s-h6);
-    font-weight: 400;
-
-    @include mobile {
-        font-size: 16px;
-    }
+	color: var(--wp--preset--color--low-dark);
+	font-family: $f_body;
+	font-size: var(--wp--preset--font-size--default);
+	font-weight: 600;
+    text-transform: uppercase;
 }
 
 p {
-    font-size: 16px;
-    line-height: 1.4;
-    color: var(--c-gray--darker);
+	color: var(--wp--preset--color--low-dark);
+	font-size: var(--wp--preset--font-size--default);
+}
 
-    &:not(.has-text-color) {
-        color: var(--c-gray--darker);
-    }
+.has-text-color {
+	&.has-high-pure-color {
+		a {
+			color: var(--wp--preset--color--low-dark) !important;
+		}
+	}
 }
