@@ -306,6 +306,13 @@ class Assets {
 				},
             ],
 
+			'sobre' => [
+				'file' => '_p-sobre.css',
+				'preload_callback' => function() {
+					return !is_front_page() && is_page();
+				},
+			],
+
             'single' => [
                 'file' => '_p-single.css',
                 'preload_callback' => function() {
@@ -365,14 +372,6 @@ class Assets {
 					return is_page_template( 'page-anchor.php' );
 				},
             ],
-
-			// Tutor
-			'tutorstarter' => [
-				'file' => '_p-tutorstarter.css',
-				'preload_callback' => function() {
-					return is_plugin_active( 'tutor/tutor.php' );
-				},
-			]
 		];
 		
 		/**
