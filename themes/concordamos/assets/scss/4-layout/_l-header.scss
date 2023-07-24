@@ -11,6 +11,10 @@ header{
         transition: all .5s;
         background-color: var(--header-background-color);
         border-bottom: 2px solid var(--wp--preset--color--low-pure);
+        @include mixins.tablet{
+            border-bottom: 6px solid var(--wp--preset--color--low-pure);
+            
+        }
 
         .container{
             max-height: size(74);
@@ -44,18 +48,26 @@ header{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
-
+            @media(max-width: 1116px){
+                justify-content: flex-start;
+                
+            }
+            @include mixins.tablet{
+                justify-content: space-between;     
+            }
 
             .logo {
-                @media (min-width: 1025px) and (max-width: 1199px) {
-                    max-width: 150px;
-                    min-height: auto;
-                }
 
                 img {
                     height: auto;
                     max-width: 100%;
+                    @media(max-width: 1136px){
+                        width: 80%;
+                    }
+                    @include mixins.tablet{
+                        width: 75%;
+                        margin: 20px 0;
+                    }
                 }
             }
 
@@ -114,6 +126,7 @@ header{
         .menus {
             display: flex;
             
+            
 
             @media (max-width: $desktop-width) {
                 display: none;
@@ -143,7 +156,13 @@ header{
 
             }
             .primary-menu {
-                margin-right: 50px;
+                margin-left: 20px;
+                margin-right: 25px;
+                @media(max-width: 1136px){
+                    margin-left: 0;
+                    
+
+                }
 
                 .fa, .fas {
                     color: var(--c-gray--darker)!important;
@@ -154,20 +173,19 @@ header{
                 @media (max-width: $desktop-width) {
                     margin-right: 0;
                 }
+                @media(max-width: 1041px){
+                    margin-left: 0;
+                }
                 ul.menu {
                     padding-left: 0;
                     margin-top: size(10);
 
                     > li {
-                        margin-right: 15px;
+                        margin-right: 20px;
                         position: relative;
                         text-transform: uppercase;
                         font-size: 1.8rem;
                         font-weight: bold;
-
-                        @media (min-width: 1025px) and (max-width: 1199px) {
-                            font-size: 1.6rem;
-                        }
 
                         &:not(.menu-item-has-children) {
                             @media (max-width: $desktop-width) {
@@ -187,7 +205,8 @@ header{
                                     display: none;
                                 }
                             }
-                        .sub-menu{
+                        
+                            .sub-menu{
                             background-color: var(--header-background-color);
                             border-left: 0px;
                             padding: 10px 0px 10px 0px;
@@ -228,15 +247,45 @@ header{
                         a{
                             color: var(--wp--preset--color--low-pure);
                             text-decoration: none;
-                            font-weight: 500 !important;
+                            font-weight: 500 !important;                            
+                            @media(max-width: 1116px){
+                                font-size: 0.85rem ;
+                                
+                            }
+                            @media(max-width: 1044px){
+                                font-size: 0.72rem ;   
+                            }   
                         }
                     }
                 }
-
                 @include mobile {
                     margin-right: 0;
                 }
             }
+            .social-menu{
+                border-right: 2px solid var(--wp--preset--color--low-pure);
+                padding-right: 30px;
+                .social-icon{
+                    margin-top: 13px;
+                }    
+            }
+        }
+
+        .header-login{
+            display: flex;
+            align-items: center;
+            a{
+                position: relative;
+                left: 40px;
+                top: 2px;
+                @media (max-width: 1250px){
+                    left: 15px;    
+                }
+                @media (max-width: 1172px){
+                    left: -5px;    
+                }
+                
+            }    
         }
 
 
@@ -247,25 +296,32 @@ header{
             grid-template-rows: 78px auto;
             grid-template-areas: "a b"
                                  "c c";
+
+            .logo{
+                img{
+                    width: 100%;
+                }
+            }                     
             .menus {
                 display: flex;
                 flex-direction: column;
                 grid-area: c;
+                border: none;
 
                 .primary-menu {
+                    order: 1;
                     ul {
                         flex-direction: column;
                         margin-left: 0;
                         padding-left: 0;
 
                         li{
-                            font-size: 24px;
-                            line-height: 2;
-
-                            @media (max-width: $desktop-width) {
-                                font-size: 16px;
-                                line-height: 1.5;
+                            a{
+                                font-size: 1rem;
+                                line-height: 2;
                             }
+                           
+
                         }
 
                     }
@@ -273,6 +329,19 @@ header{
                     ul.sub-menu {
                         padding-left: 20px
                     }
+                }
+                .social-menu{
+                    order: 3;
+                    padding-right: 0;
+                    margin-left: -10px;
+                    border: none;
+                    margin-top: 15px;
+
+                }
+                .header-login{
+                    order: 2;
+                    position: relative;
+                    left: 7px;
                 }
             }
         }
