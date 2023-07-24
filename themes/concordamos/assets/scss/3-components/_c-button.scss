@@ -1,50 +1,39 @@
-.button{
-    border-radius: 5px;
-    border: 2px solid $c_primary;
-    background-color: $c_primary;
-    font-weight: 900;
-    padding: 6px 15px;
-    font-size: 15px;
 
-    &, &:focus, &:active, &:hover{
-        color: white;
-    }
-
-    &.white{
-        background-color: #fff;
-        border-color: white;
-        color: $c_secondary;
-    }
-
-    &.border-white{
-        border-color: white;
-    }
-
-    &.outline{
-        background-color: transparent;
-    }
-
-    &.block{
-        display: block;
-        width: 100%;
-    }
-
-    &.small{
-        padding: 4px 15px;
-        font-size: 13px;
-        line-height: 13px;
-    }
-
-    &.dark{
-        color: white;
+.pink-button{
+    a{
+        background-color: var(--wp--preset--color--secondary-pure);
+        color: var(--wp--preset--color--low-dark);
+        border: 3px solid #000;
+        font-family: 'Oswald';
+        font-size: 1.5rem;
+        letter-spacing: -0.24px;
+        font-weight: 500;
+        padding: 3px 28px 7px 28px;     
     }
 }
 
-.ow-button-base{
+.white-button{
     a{
-        font-family: 'Source Sans Pro';
-        color: red;
-        font-weight: bold;
-        font-size: 13px;
-    }
+        background-color: #fff;
+        color: var(--wp--preset--color--low-dark);
+        border: 3px solid #000;
+        font-family: 'Oswald';
+        font-size: 1.5rem;
+        letter-spacing: -0.24px;
+        font-weight: 500;
+        padding: 3px 28px 7px 28px;    
+    }        
+}
+
+.yellow-button{
+    a{
+        background-color: var(--wp--preset--color--primary-light);
+        color: var(--wp--preset--color--low-dark);
+        border: 3px solid #000;
+        font-family: 'Oswald';
+        font-size: 1.5rem;
+        letter-spacing: -0.24px;
+        font-weight: 500;
+        padding: 3px 28px 7px 28px;    
+    }        
 }

@@ -3,15 +3,15 @@
 
 .home {
     #app{
+        @include mixins.tablet{
+            overflow-x: initial;
+        }
         .wp-block-cover__inner-container{
             max-width: 1170px;
             width: 100%;
             padding-left: 15px;
             padding-right: 15px;
-        }
-        @include mixins.tablet{
-            overflow-x: initial;
-        }
+        } 
         .power{
             background-color: var(--wp--preset--color--secondary-pure);
         }
@@ -24,5 +24,8 @@
         .create-vote{
             background-color: var(--wp--preset--color--high-light);    
         }
+
+        
+        @import "./../3-components/c-button";
     }
 }
