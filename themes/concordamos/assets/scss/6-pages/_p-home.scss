@@ -9,6 +9,9 @@
             padding-left: 15px;
             padding-right: 15px;
         }
+        @include mixins.tablet{
+            overflow-x: initial;
+        }
         .power{
             background-color: var(--wp--preset--color--secondary-pure);
         }
