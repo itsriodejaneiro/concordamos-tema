@@ -76,6 +76,11 @@
             border-top: 3px solid #000;
             border-bottom: 3px solid #000;
 
+            @media(max-width: 781px){
+                padding-left: 0;
+                padding-right: 0;
+            }
+
             .objectives-left-column {
                 margin-top: 60px;
                 width: 100%;
@@ -118,6 +123,8 @@
             padding-bottom: 90px;
             @media(max-width: 781px){
                 padding-top: 20px;
+                padding-left: 0;
+                padding-right: 0;
                 
             }
 
@@ -147,6 +154,11 @@
 
             .wp-block-columns{
                 gap: 2rem;
+                flex-wrap: wrap;
+                @include mixins.small{   
+                    gap: 0.5rem;
+                }
+                
             }
 
             .employee-card {
@@ -154,6 +166,13 @@
                 background-color: #FFF;
                 border-radius: 24px;
                 border: 3px solid #000;
+                max-width: 280px;
+                width: 100%;
+                @include mixins.small{
+                    max-width: 160px;
+                    height: auto;
+                    border: 2px solid #000;
+                }
 
                 h4 {
                     font-weight: 600;
