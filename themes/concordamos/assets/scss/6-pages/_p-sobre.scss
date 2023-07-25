@@ -125,6 +125,7 @@
                 padding-top: 20px;
                 padding-left: 0;
                 padding-right: 0;
+                padding-bottom: 60px;
                 
             }
 
@@ -155,8 +156,13 @@
             .wp-block-columns{
                 gap: 2rem;
                 flex-wrap: wrap;
-                @include mixins.small{   
+                @media(max-width: 1100px){
+                    gap: 1rem;
+                }
+                @media(max-width: 601px){   
                     gap: 0.5rem;
+                    display: flex;
+                    justify-content: space-around;
                 }
                 
             }
@@ -166,12 +172,25 @@
                 background-color: #FFF;
                 border-radius: 24px;
                 border: 3px solid #000;
-                max-width: 280px;
+                max-width: 270px;
                 width: 100%;
-                @include mixins.small{
+
+                @media(max-width: 1100px){
+                    padding: 15px;
+                }
+               
+                @media(max-width: 601px){
                     max-width: 160px;
                     height: auto;
                     border: 2px solid #000;
+                    margin-top: 10px;
+                }
+
+                img{
+                    @media(max-width: 1100px){
+                        width: 72px;
+                        height: auto;
+                    } 
                 }
 
                 h4 {
@@ -180,6 +199,9 @@
                     letter-spacing: -0.24px;
                     margin-top: 13px;
                     margin-bottom: 12px;
+                    @media(max-width: 1100px){
+                        font-size: 1rem;
+                    }
                 }
 
                 p {
@@ -187,6 +209,16 @@
                     letter-spacing: -0.16px;
                     margin-bottom: 0;
                     margin-top: 0;
+                    @media(max-width: 1100px){
+                        font-size: 0.750rem;
+                        text-align: center;
+                    }
+                }
+            }
+            .team-second-column{
+                @media(max-width: 601px) {
+                    margin-top: -19px;
+                    margin-bottom: 0;
                 }
             }
         }

@@ -23,6 +23,7 @@ services:
       - ./plugins/hacklab-blocks:/var/www/html/wp-content/plugins/hacklab-blocks
       - ./compose/local/wordpress/htaccess:/var/www/html/.htaccess
       - ./compose/local/wordpress/php/extra.ini:/usr/local/etc/php/conf.d/extra.ini
+      # - ../concordamos-plugin/trunk:/var/www/html/wp-content/plugins/concordamos
 
   watcher:
     build:
