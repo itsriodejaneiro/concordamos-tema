@@ -313,6 +313,13 @@ class Assets {
 				},
 			],
 
+			'criar-votacao' => [
+				'file' => '_p-criar-votacao.css',
+				'preload_callback' => function() {
+					return !is_front_page() && is_page();
+				},
+			],
+
             'single' => [
                 'file' => '_p-single.css',
                 'preload_callback' => function() {
