@@ -327,6 +327,13 @@ class Assets {
 				},
             ],
 
+			'single-voting' => [
+				'file' => '_p-single-voting.css',
+				'preload_callback' => function() {
+					return is_singular();
+				},
+			],
+
             '404' => [
                 'file' => '_p-404.css',
                 'preload_callback' => function() {
