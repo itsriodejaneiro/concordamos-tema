@@ -27,13 +27,15 @@
 
 .yellow-button{
     a{
-        background-color: var(--wp--preset--color--primary-light);
+        background-color: var(--wp--preset--color--primary-pure);
         color: var(--wp--preset--color--low-dark);
         border: 3px solid #000;
         font-family: 'Oswald';
         font-size: 1.5rem;
         letter-spacing: -0.24px;
         font-weight: 500;
-        padding: 3px 28px 7px 28px;    
+        padding: 3px 23px 7px 23px;
+        box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+            
     }        
 }

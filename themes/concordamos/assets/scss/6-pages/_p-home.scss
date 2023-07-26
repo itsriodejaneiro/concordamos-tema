@@ -14,15 +14,112 @@
         } 
         .power{
             background-color: var(--wp--preset--color--secondary-pure);
+            padding-top: 70px;
+            padding-bottom: 56px;
+            h1{
+                margin-top: 0;
+            }
         }
         .participation{
-            background-color: var(--wp--preset--color--primary-pure);    
+            background-color: var(--wp--preset--color--primary-pure);
+            border-top: 3px solid #000;
+            border-bottom: 3px solid #000;
+            .wp-block-cover__inner-container{
+                max-width: 1260px;
+            }
+            .participation-columns{
+                margin-top: 0;
+                margin-bottom: 0;
+                h2{
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                .participation-card{
+                    padding-left: 55px;
+                    h3{
+                        font-family: 'Inter';
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        margin-bottom: 15px;
+                        margin-top: 5px;
+                        img{
+                            margin-left: 10px;
+                        }
+                    }
+                    h4{
+                        font-family: 'Oswald';
+                        font-weight: 500;
+                        font-size: 1.5rem;
+                        text-transform: capitalize;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        line-height: 130%; 
+                        letter-spacing: -0.24px;
+                        padding-right: 15px;   
+                    }
+                }
+            } 
         }
         .mobiles-columns{
             background-color: var(--wp--preset--color--helper-pure);
+            padding-top: 80px;
+            padding-bottom: 60px;
+            .mobiles{
+                display: flex;
+                gap: 1.75rem;
+                margin-right: 40px;
+                
+            }
+            h2{
+                margin-top: 12px;
+                margin-bottom: 15px;
+            }
+            h3{
+                font-family: 'Inter';
+                font-size: 1.25rem;
+                font-weight: 600;
+                
+            }
+            p{
+                margin-bottom: 30px;
+                padding-right: 0;
+            }
         }
         .create-vote{
-            background-color: var(--wp--preset--color--high-light);    
+            background-color: var(--wp--preset--color--high-light);
+            border-top: 3px solid #000;
+            padding-top: 60px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            .wp-block-columns{
+                margin-bottom: 0;
+            }
+            h2{
+                font-size: 4rem;
+                margin-top: 10px;
+                margin-bottom: 25px;
+            }    
+        }
+        .search-votings{
+            border-top: 3px solid #000;
+            padding-top: 0;
+            .wp-block-columns{
+                margin-top: 0;
+            }
+            h2{
+                font-size: 4rem;
+                margin-top: -55px;
+                margin-bottom: 25px;
+            }
+            figure{
+                text-align: center;
+            }
+            h3{
+                font-family: 'Inter';
+                font-size: 1.25rem;
+                font-weight: 600;
+                
+            }       
         }
 
         
