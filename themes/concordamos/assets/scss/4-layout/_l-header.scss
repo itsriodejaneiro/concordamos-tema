@@ -10,7 +10,7 @@ header{
         width: 100%;
         transition: all .5s;
         background-color: var(--header-background-color);
-        border-bottom: 2px solid var(--wp--preset--color--low-pure);
+        min-height: 74px;
         @include mixins.tablet{
             border-bottom: 6px solid var(--wp--preset--color--low-pure);
             
@@ -57,7 +57,7 @@ header{
             }
 
             .logo {
-
+                margin-top: 2.5px;
                 img {
                     height: auto;
                     max-width: 100%;
@@ -125,6 +125,7 @@ header{
 
         .menus {
             display: flex;
+            min-height: 74px;
             
             
 
@@ -178,7 +179,7 @@ header{
                 }
                 ul.menu {
                     padding-left: 0;
-                    margin-top: size(10);
+                    margin-top: size(11);
 
                     > li {
                         margin-right: 20px;
@@ -263,7 +264,7 @@ header{
                 }
             }
             .social-menu{
-                border-right: 2px solid var(--wp--preset--color--low-pure);
+                border-right: 3px solid var(--wp--preset--color--low-pure);
                 padding-right: 30px;
                 .social-icon{
                     margin-top: 13px;
