@@ -1,0 +1,47 @@
+@use "./../1-settings/_s-variables" as variables;
+@use "./../2-atoms/a-mixins" as mixins;
+
+.single-voting{
+    #app{
+        .voting-header{
+            min-height: 393px;
+            padding-top: 3.8rem;
+            .info{
+                .voting-breadcrumb{
+                    font-size: 1.25rem;
+                    margin-top: 10px;
+                    font-family: 'Inter';
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+                .voting-title{
+                    line-height: 112%;
+                    letter-spacing: -0.48px;
+                    margin-top: 8px;    
+                }
+                p{
+                    max-width: 570px;
+                    width: 100%;
+                }
+                .meta{
+                    margin-top: 25px;
+                    .tax-tag{
+                        font-size: 0.75rem;
+                        font-weight: 700;
+                        li{
+                            padding: 0.125rem 0.325rem;    
+                        }
+                    }
+                    .author{
+                        font-size: 0.75rem;
+                        color: #000;
+                        letter-spacing: -0.12px;    
+                    }
+                }
+            }
+        }
+        .voting-content{
+            background-color: var(--wp--preset--color--secondary-light);
+        }        
+    }
+}
