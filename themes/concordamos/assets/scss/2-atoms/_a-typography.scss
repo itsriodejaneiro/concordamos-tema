@@ -66,14 +66,15 @@ h2 {
 
 h3 {
 	color: var(--wp--preset--color--low-dark);
-	font-family: $f_body;
+	font-family: $f_title;
 	font-size: var(--wp--preset--font-size--large);
 	font-weight: 400;
-    text-transform: uppercase;
+    
 
 	@include mobile {
 		font-size: var(--wp--preset--font-size--intermediate-standard);
 	}
+
 }
 
 h4 {
