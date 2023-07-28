@@ -11,15 +11,13 @@ header{
         transition: all .5s;
         background-color: var(--header-background-color);
         min-height: 74px;
-        @include mixins.tablet{
-            border-bottom: 6px solid var(--wp--preset--color--low-pure);
-            
-        }
+        border-bottom: 3px solid var(--wp--preset--color--low-pure);
 
         .container{
             max-height: size(74);
             max-width: size(1170);
             width: 100%;
+           
         }
         
         .logged-in & {
