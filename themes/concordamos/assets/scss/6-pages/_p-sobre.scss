@@ -51,14 +51,14 @@
                 }
             }
             h2{
-                margin-bottom: 20px;
+                margin-bottom: 25px;
                 @media (max-width: 781px){
                     margin-top: 0;
                     font-size: 3rem;
                 }
             }
             p{
-                margin-bottom: 30px;
+                margin-bottom: 26px;
                 @media (max-width: 781px){
                     margin-bottom: 15px;
                 }
@@ -81,8 +81,17 @@
                 padding-right: 0;
             }
 
-            .objectives-left-column {
+            .wp-block-columns{
+                margin-bottom: 78px;
                 margin-top: 60px;
+                @media(max-width: 781px){
+                    margin-bottom: 0;
+                    margin-top: 0;   
+                }
+            }
+
+            .objectives-left-column {
+                margin-top: 48px;
                 width: 100%;
                 max-width: 530px;
                 @media(max-width: 781px){
@@ -119,7 +128,7 @@
 
         .team {
             background-color: var(--wp--preset--color--secondary-pure);
-            padding-top: 70px;
+            padding-top: 80px;
             padding-bottom: 90px;
             @media(max-width: 781px){
                 padding-top: 20px;
@@ -130,7 +139,7 @@
             }
 
             h2{
-                margin-bottom: 20px;
+                margin-bottom: 30px;
                 @media(max-width: 781px){
                     font-size: 3rem;
                     text-align: left;
@@ -143,7 +152,7 @@
                 width: 100%;
                 margin-left: auto;
                 margin-right: auto;
-                margin-bottom: 50px;
+                margin-bottom: 65px;
                 @media(max-width: 781px){
                     margin-left: 0;
                     margin-right: 0;
@@ -226,7 +235,7 @@
         .test-plugin {
             background-color: var(--wp--preset--color--helper-pure);
             padding-top: 90px;
-            padding-bottom: 100px;
+            padding-bottom: 80px;
             border-top: 3px solid #000;
             @media(max-width: 781px){
                 padding-top: 60px;
@@ -255,6 +264,7 @@
                 }    
             }
             .plugin-test-column{
+                margin-top: 20px;
                 img{
                     @media(max-width: 781px){
                         height: auto;
