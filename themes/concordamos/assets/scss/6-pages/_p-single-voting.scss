@@ -3,9 +3,13 @@
 
 .single-voting{
     #app{
+        
         .voting-header{
             min-height: 393px;
             padding-top: 3.8rem;
+            @media(max-width: 781px){
+                padding-top: 2rem;   
+            }
             .info{
                 .voting-breadcrumb{
                     font-size: 1.25rem;
@@ -39,9 +43,76 @@
                     }
                 }
             }
+            .dates{
+                h3{
+                    font-family: 'Oswald';
+                    font-size: 1.5rem;
+                    line-height: 130%;
+                    letter-spacing: -0.24px;
+                    font-weight: 500;
+                }
+                .date, .time{
+                    font-family: 'Inter';
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%;
+                    letter-spacing: -0.14px;
+                    text-transform: uppercase;    
+                }
+            }
         }
         .voting-content{
             background-color: var(--wp--preset--color--secondary-light);
+            padding-bottom: 112px;
+            h2{
+                font-size: 2rem;
+                margin-top: 58px;
+                margin-bottom: 58px;    
+            }
+            .options{
+                @include mixins.small{
+                    grid-template-columns: 1fr;
+                }    
+            }
+            .option-voting{
+                h3{
+                    font-family: 'Oswald';
+                    font-size: 1.5rem;
+                    line-height: 130%;
+                    letter-spacing: -0.24px;
+                    font-weight: 500;
+                    text-transform: capitalize;     
+                }
+                p{
+                    font-family: 'Inter';
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%;
+                    letter-spacing: -0.14px;
+                    text-transform: uppercase;       
+                }
+            }
+            .actions{
+                a{
+                    font-family: 'Inter';
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%;
+                    letter-spacing: -0.14px;
+                    text-transform: uppercase;         
+                }
+                
+                button{
+                    font-family: 'Oswald';
+                    font-size: 1.5rem;
+                    line-height: 130%;
+                    letter-spacing: -0.24px;
+                    font-weight: 500;        
+                }    
+            }
         }        
     }
 }
