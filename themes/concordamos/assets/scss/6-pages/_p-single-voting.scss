@@ -65,6 +65,11 @@
         .voting-content{
             background-color: var(--wp--preset--color--secondary-light);
             padding-bottom: 112px;
+            h2{
+                font-size: 2rem;
+                margin-top: 58px;
+                margin-bottom: 58px;    
+            }
             .options{
                 @include mixins.small{
                     grid-template-columns: 1fr;
