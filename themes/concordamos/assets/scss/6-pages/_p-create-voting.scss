@@ -12,20 +12,32 @@
             margin-top: 80px;
             margin-bottom: 20px;
         }
+        p{
+            margin-bottom: -16px;
+        }
         .title-section{
             font-family: 'Oswald';
             font-weight: 500;
             font-size: 1.5rem;
-            margin-top: 0;
+            margin-top: 40px;
             margin-bottom: 20px;
             line-height: 130%; 
             letter-spacing: -0.24px;
-            padding-right: 15px;   
+            padding-right: 15px;
         }
+
         .radio-options{
             label{
                 font-weight: 700;
             }
+        }
+
+        .button-full{
+            font-family: 'Oswald';
+            font-size: 1.5rem;
+            line-height: 130%;
+            letter-spacing: -0.24px;
+            font-weight: 500; 
         }
     }
 }
