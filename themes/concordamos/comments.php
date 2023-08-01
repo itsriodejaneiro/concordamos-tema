@@ -25,7 +25,7 @@ if ( post_password_required() )
                 $comments_number = get_comments_number();
             if ( '1' === $comments_number ) {
                 /* translators: %s: Post title. */
-                printf( _x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'concordamos-textdomain' ), get_the_title() );
+                printf( _x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'concordamos-theme' ), get_the_title() );
             } else {
                 printf(
                     /* translators: 1: Number of comments, 2: Post title. */
@@ -34,7 +34,7 @@ if ( post_password_required() )
                         '%1$s thoughts on &ldquo;%2$s&rdquo;',
                         $comments_number,
                         'comments title',
-                        'concordamos-textdomain'
+                        'concordamos-theme'
                     ),
                     number_format_i18n( $comments_number ),
                     get_the_title()
@@ -58,14 +58,14 @@ if ( post_password_required() )
             if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
         ?>
         <nav class="navigation comment-navigation" role="navigation">
-            <h1 class="screen-reader-text section-heading"><?php _e( 'Comment navigation', 'concordamos-textdomain' ); ?></h1>
-            <div class="nav-previous"><?php previous_comments_link( __( '&larr; Mais antigos', 'concordamos-textdomain' ) ); ?></div>
-            <div class="nav-next"><?php next_comments_link( __( 'Mais Novos &rarr;', 'concordamos-textdomain' ) ); ?></div>
+            <h1 class="screen-reader-text section-heading"><?php _e( 'Comment navigation', 'concordamos-theme' ); ?></h1>
+            <div class="nav-previous"><?php previous_comments_link( __( '&larr; Mais antigos', 'concordamos-theme' ) ); ?></div>
+            <div class="nav-next"><?php next_comments_link( __( 'Mais Novos &rarr;', 'concordamos-theme' ) ); ?></div>
         </nav><!-- .comment-navigation -->
         <?php endif; // Check for comment navigation ?>
 
         <?php if ( ! comments_open() && get_comments_number() ) : ?>
-        <p class="no-comments"><?php _e( 'Os comentários estão desabilitados.' , 'concordamos-textdomain' ); ?></p>
+        <p class="no-comments"><?php _e( 'Os comentários estão desabilitados.' , 'concordamos-theme' ); ?></p>
         <?php endif; ?>
 
     <?php endif; // have_comments() ?>

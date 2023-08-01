@@ -34,7 +34,7 @@
                             ?>
                         </a>
                     </div>
-                    <button menu-container-class='primary-menu' class="toggle-menu" aria-label="<?= __("Toggle menu visibility", "concordamos-textdomain") ?>">
+                    <button menu-container-class='primary-menu' class="toggle-menu" aria-label="<?= __("Toggle menu visibility", "concordamos-theme") ?>">
 
                     </button>
 
@@ -46,7 +46,7 @@
                         </div>
 
                     </div>
-                  
+
                 </div>
             </div>
         </div>

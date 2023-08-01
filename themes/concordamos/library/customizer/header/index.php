@@ -7,7 +7,7 @@ function header_custom_options($wp_customize) {
     $wp_customize->add_section(
 		$section,
 		array(
-			'title' => esc_html__( 'Header', 'concordamos-textdomain' ),
+			'title' => esc_html__( 'Header', 'concordamos-theme' ),
 			'section' => $section,
 		)
 	);

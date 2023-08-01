@@ -33,7 +33,7 @@ add_action( 'after_setup_theme', 'theme_supports' );
  * Load the theme textdomain
  */
 function theme_setup() {
-    load_theme_textdomain( 'concordamos-textdomain', get_stylesheet_directory() . '/languages' );
+    load_theme_textdomain( 'concordamos-theme', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'theme_setup' );
 

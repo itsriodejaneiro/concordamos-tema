@@ -47,7 +47,7 @@ get_header();
                     </div>
 
                     <div class="post-footer-share">
-                        <h6><?php _e( 'Share', 'concordamos-textdomain' ); ?></h6>
+                        <h6><?php _e( 'Share', 'concordamos-theme' ); ?></h6>
 
                         <div class="social-media">
 

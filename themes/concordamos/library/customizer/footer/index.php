@@ -8,7 +8,7 @@ function footer_custom_options($wp_customize) {
 	$wp_customize->add_section(
 		$section,
 		array(
-			'title' => esc_html__( 'Footer', 'concordamos-textdomain' ),
+			'title' => esc_html__( 'Footer', 'concordamos-theme' ),
 			'section' => $section,
 		)
 	);
@@ -24,8 +24,8 @@ function footer_custom_options($wp_customize) {
 	$wp_customize->add_control(
 		$prefix . '_copyright_text',
 		array(
-			'label'       => __( 'Footer copyright text', 'concordamos-textdomain' ),
-			'description' => __( 'Leave it empty to hide all copyright info.', 'concordamos-textdomain' ),
+			'label'       => __( 'Footer copyright text', 'concordamos-theme' ),
+			'description' => __( 'Leave it empty to hide all copyright info.', 'concordamos-theme' ),
 			'section'     => $section,
 			'default'     => '',
 			'type'        => 'text',
@@ -47,7 +47,7 @@ function footer_custom_options($wp_customize) {
 		array(
 			'type' => 'checkbox',
 			'section' => $section,
-			'label' => __( 'Display year and site name aside copyright info?', 'concordamos-textdomain' ),
+			'label' => __( 'Display year and site name aside copyright info?', 'concordamos-theme' ),
 		)
 	);
 
@@ -65,7 +65,7 @@ function footer_custom_options($wp_customize) {
 			$wp_customize,
 			$prefix . '_background_color',
 			array(
-				'label' => __( 'Footer background', 'concordamos-textdomain' ),
+				'label' => __( 'Footer background', 'concordamos-theme' ),
 				'section' => $section,
 				'settings' => $prefix . '_background_color'
     		)
@@ -87,7 +87,7 @@ function footer_custom_options($wp_customize) {
 			$wp_customize,
 			$prefix . '_text_color',
 			array(
-				'label' => __( 'Footer text color', 'concordamos-textdomain' ),
+				'label' => __( 'Footer text color', 'concordamos-theme' ),
 				'section' => $section,
 				'settings' => $prefix . '_text_color'
     		)
