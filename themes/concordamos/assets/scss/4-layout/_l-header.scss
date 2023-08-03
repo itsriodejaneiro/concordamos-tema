@@ -14,7 +14,7 @@ header{
         border-bottom: 3px solid var(--wp--preset--color--low-pure);
 
         .container{
-            max-height: size(71);
+            max-height: size(74);
             max-width: size(1170);
             width: 100%;
            
@@ -155,7 +155,7 @@ header{
 
             }
             .primary-menu {
-                margin-right: 20px;
+                margin-right: 23px;
                 @media(max-width: 1136px){
                     margin-left: 0;
                     
@@ -264,6 +264,8 @@ header{
             .social-menu{
                 border-right: 3px solid var(--wp--preset--color--low-pure);
                 padding-right: 30px;
+                margin-right: 23px;
+                width: 180px;
                 .social-icon{
                     margin-top: 13px;
                     margin-right: 0;
@@ -276,8 +278,16 @@ header{
             align-items: center;
             a{
                 position: relative;
-                left: 40px;
+                left: 37px;
                 top: 2px;
+                color: #000;
+                font-family: 'Inter';
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: -0.2px;
+                text-transform: uppercase;
                 @media (max-width: 1250px){
                     left: 15px;    
                 }
