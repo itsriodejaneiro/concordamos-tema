@@ -42,7 +42,7 @@
                         <?= wp_nav_menu(['theme_location' => 'main-menu', 'container' => 'nav', 'menu_id' => 'main-menu', 'menu_class' => 'menu', 'container_class' => 'primary-menu']) ?>
                         <?= the_social_networks_menu() ?>
                         <div class='header-login'>
-                            <a href="#">LOGIN</a>
+                            <a href="/login/">LOGIN</a>
                         </div>
 
                     </div>
