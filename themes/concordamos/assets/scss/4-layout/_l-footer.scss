@@ -7,8 +7,15 @@ footer.main-footer {
     .wp-block-cover__inner-container{
         max-width: 1170px;
         width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
+
+        .wp-block-columns{
+            gap: 46px;
+
+            .wp-block-column{
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }
 
     p, a{
@@ -16,7 +23,7 @@ footer.main-footer {
     }
 
     .footer-logo{
-        margin: 42px 0 32px 0;  
+        margin: 42px 0 42px 0;  
         max-width: 370px;
         width: 100%;
     }
@@ -32,13 +39,14 @@ footer.main-footer {
         margin-top: 30px;
 
        p{
-        margin-bottom: 20px;
+        margin-top: 12px;
        }
     }
 
     .social-icons{
         display: flex;
-        justify-content: space-between;
+        flex-direction: row !important;
+        gap: 76px;
     }
 
     @include mixins.tablet{
