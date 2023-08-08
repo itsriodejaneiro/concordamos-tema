@@ -1,0 +1,54 @@
+$p_theme_assets: "/wp-content/themes/concordamos/assets";
+@use "./../1-settings/s-variables" as variables;
+@use "./../2-atoms/a-mixins" as mixins;
+@use "./../7-parts/p-filter-posts";
+
+body.post-type-archive-voting{
+    
+    #app{
+        background-color: var(--wp--preset--color--primary-light) !important;
+
+        .voting-archive-content{
+
+            details{
+                border-radius: 32px;
+                border: 3px solid #000;
+                background: var(--wp--preset--color--high-pure);
+                height: 68px;
+                max-width: 270px;
+                width: 100%;
+                
+                >summary{
+                    display: flex;
+                    color: var(--low-light, #666);
+                    font-family: Oswald;
+                    font-size: var(--wp--preset--font-size-medium);
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: -0.24px;
+                    margin-top: 16px;
+                    margin-bottom: 16px;
+                    margin-left: 32px;
+                    gap: 80px;
+
+                    &:after{
+                        content: '';
+                        background-image: url($p_theme_assets+"/images/icon-filter.svg");
+                        width: 32px;
+                        height: 32px;
+                        background-repeat: no-repeat;
+                        position: relative;
+                        background-size: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+    @import "./../7-parts/p-content-post";
+}
+
+
+
+

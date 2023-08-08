@@ -355,6 +355,13 @@ class Assets {
 				},
 			],
 
+			'archive-voting' => [
+				'file' => '_p-archive-voting.css',
+				'preload_callback' => function() {
+					return ( is_post_type_archive( 'voting' ) || is_singular( 'voting' ) ) ? true : false;
+				},
+			],
+
 			'archive-perguntas-frequentes' => [
 				'file' => '_p-archive-perguntas-frequentes.css',
 				'preload_callback' => function() {
