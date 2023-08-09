@@ -22,7 +22,7 @@ body.post-type-archive-voting{
                     display: flex;
                     color: var(--low-light, #666);
                     font-family: Oswald;
-                    font-size: var(--wp--preset--font-size-medium);
+                    font-size: var(--wp--preset--font-size--medium);
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
@@ -40,9 +40,105 @@ body.post-type-archive-voting{
                         background-repeat: no-repeat;
                         position: relative;
                         background-size: 100%;
+
+                        @include mixins.small{
+                            margin-top: 7px;
+                        }
+                    }
+
+                    @include mixins.small{
+                        gap: 187px;
+                        margin-top: 10px;
                     }
                 }
+
+                @include mixins.small{
+                    border-radius: 16px;
+                    max-width: 354px;
+                    width: 100%;
+                }
             }
+
+            .voting-archive-filters{
+                
+                @include mixins.small{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            .voting-search-form{
+                height: 68px;
+                max-width: 870px;
+                width: 100%;
+                
+                button{
+                    max-width: 160px;
+                    width: 100%;
+                    height: 68px;
+
+                    @include mixins.small{
+                        max-width: 71.9px;
+                        width: 100%;
+                        -webkit-border-top-right-radius: 16px;
+                        -webkit-border-bottom-right-radius: 16px;
+                        -moz-border-radius-topright: 16px;
+                        -moz-border-radius-bottomright: 16px;
+                        border-top-right-radius: 16px;
+                        border-bottom-right-radius: 16px;
+                    }
+                }
+
+                input {
+
+                    @include mixins.small{
+                        padding: 16px;
+                        border-radius: 16px 0 0 16px;
+                    }
+                }
+
+                @include mixins.small{
+                    max-width: 324px;
+                    width: 100%;
+                }
+            }
+
+            .voting-archive-grid{
+                margin-top: 72px;
+                gap: 9px;
+
+                article:nth-of-type( 3n + 2 ){
+                    -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+                    -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+                    box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
+                }
+
+                .voting-card{
+                    margin-bottom: 9px;
+                }
+
+                .voting-card.past{
+                    height: 317px;
+                    max-width: 370px;
+                    width: 100%;
+
+                    header{
+                        background-color: var(--wp--preset--color--helper-pure);
+                    }
+                }
+
+
+                .voting-card.present{
+                    height: 317px;
+                    max-width: 370px;
+                    width: 100%;
+
+                    header{
+                        background-color: var(--wp--preset--color--warning-pure);
+                    }
+                 }
+            }
+            
         }
     }
     
