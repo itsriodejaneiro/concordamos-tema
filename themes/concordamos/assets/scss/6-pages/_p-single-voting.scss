@@ -2,6 +2,7 @@
 @use "./../2-atoms/a-mixins" as mixins;
 
 .single-voting{
+
     #app{
         
         .voting-header{
@@ -13,14 +14,12 @@
             }
 
             .info{
-<<<<<<< HEAD
+
                 @include mixins.mobile{
                     margin-left: 16px;
                     margin-right: 38px;
                 }
-=======
 
->>>>>>> single-voting
                 .voting-breadcrumb{
                     font-size: 1.25rem;
                     margin-top: 10px;
@@ -42,12 +41,10 @@
                 
                 .meta{
                     margin-top: 25px;
-<<<<<<< HEAD
+
                     @include mixins.mobile{
                         gap: unset;
                     }
-=======
->>>>>>> single-voting
 
                     .tax-tag{
                         font-size: 0.75rem;
@@ -64,19 +61,16 @@
                         font-size: 0.75rem;
                         color: #000;
                         letter-spacing: -0.12px;
-                        
                     }
                 }
             }
 
             .dates{
-<<<<<<< HEAD
+
                 @include mixins.mobile{
                     padding-top: 16px;
                 }
-=======
 
->>>>>>> single-voting
                 h3{
                     font-family: 'Oswald';
                     font-size: 1.5rem;
@@ -84,12 +78,15 @@
                     letter-spacing: -0.24px;
                     font-weight: 500;
                 }
-<<<<<<< HEAD
+
                 @include mixins.mobile{
+
                     .date{
+
                         &.date-start{
                             margin-left: 16px;
                         }
+
                         &.date-end{
                             margin-right: 58px;
                         }
@@ -97,9 +94,6 @@
 
                 }
                 
-=======
-
->>>>>>> single-voting
                 .date, .time{
                     font-family: 'Inter';
                     font-size: 14px;
@@ -115,17 +109,16 @@
         .voting-content{
             background-color: var(--wp--preset--color--secondary-light);
             padding-bottom: 112px;
-<<<<<<< HEAD
+
             @include mixins.mobile{
                 padding-bottom: 108px;
             }
-=======
 
->>>>>>> single-voting
             h2{
                 font-size: 2rem;
                 margin-top: 58px;
                 margin-bottom: 58px;   
+
                 @include mixins.mobile{
                     display: none;
                 } 
@@ -137,12 +130,7 @@
             }
 
             .options{
-<<<<<<< HEAD
-                @include mixins.mobile{
-=======
-
                 @include mixins.small{
->>>>>>> single-voting
                     grid-template-columns: 1fr;
                     margin-bottom: 40px !important;
                 }    
@@ -171,14 +159,11 @@
             }
 
             .actions{
-<<<<<<< HEAD
                 @include mixins.mobile{
                     display: flex;
                     flex-direction: column;
                 }
-=======
 
->>>>>>> single-voting
                 a{
                     font-family: 'Inter';
                     font-size: 14px;
