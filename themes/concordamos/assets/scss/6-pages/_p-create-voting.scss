@@ -68,5 +68,25 @@
             letter-spacing: -0.24px;
             font-weight: 500; 
         }
+        .voting-modal{
+            h2{
+                font-size: 32px;
+                margin-top: 5px;
+                margin-bottom: 10px;
+                @media(max-width: 782px){
+                    margin-top: 10px;    
+                }
+            }
+            .buttons{
+                margin-top: 45px;
+                @media(max-width: 782px){
+                    margin-top: 22px;
+                    margin-bottom: 5px;    
+                }
+                .primary{
+                    margin-right: 18px;    
+                }    
+            }
+        }
     }
 }

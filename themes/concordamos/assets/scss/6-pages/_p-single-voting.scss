@@ -156,6 +156,17 @@
                     align-items: center;       
                 }    
             }
+            .voting-modal{
+                main{
+                    h2{
+                        margin-top: 5px;
+                        margin-bottom: 10px;
+                    }
+                    .primary{
+                        margin-right: 18px;    
+                    }    
+                }
+            }
             .sidebar{
                 @include mixins.mobile{
                     padding-top: 106px;
