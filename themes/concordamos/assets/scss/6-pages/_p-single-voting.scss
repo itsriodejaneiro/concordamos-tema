@@ -7,14 +7,20 @@
         .voting-header{
             min-height: 393px;
             padding-top: 3.8rem;
-            @media(max-width: 781px){
+
+            @media( max-width: 781px ){
                 padding-top: 2rem;   
             }
+
             .info{
+<<<<<<< HEAD
                 @include mixins.mobile{
                     margin-left: 16px;
                     margin-right: 38px;
                 }
+=======
+
+>>>>>>> single-voting
                 .voting-breadcrumb{
                     font-size: 1.25rem;
                     margin-top: 10px;
@@ -22,30 +28,38 @@
                     font-weight: 600;
                     text-transform: uppercase;
                 }
+
                 .voting-title{
                     line-height: 112%;
                     letter-spacing: -0.48px;
                     margin-top: 8px;    
                 }
+
                 p{
                     max-width: 570px;
                     width: 100%;
                 }
+                
                 .meta{
                     margin-top: 25px;
+<<<<<<< HEAD
                     @include mixins.mobile{
                         gap: unset;
                     }
+=======
+>>>>>>> single-voting
 
                     .tax-tag{
                         font-size: 0.75rem;
                         font-weight: 700;
+
                         li{
                             padding: 0.125rem 0.325rem;  
                             margin-bottom: 8px;
                             margin-top: 8px;  
                         }
                     }
+
                     .author{
                         font-size: 0.75rem;
                         color: #000;
@@ -54,10 +68,15 @@
                     }
                 }
             }
+
             .dates{
+<<<<<<< HEAD
                 @include mixins.mobile{
                     padding-top: 16px;
                 }
+=======
+
+>>>>>>> single-voting
                 h3{
                     font-family: 'Oswald';
                     font-size: 1.5rem;
@@ -65,6 +84,7 @@
                     letter-spacing: -0.24px;
                     font-weight: 500;
                 }
+<<<<<<< HEAD
                 @include mixins.mobile{
                     .date{
                         &.date-start{
@@ -77,6 +97,9 @@
 
                 }
                 
+=======
+
+>>>>>>> single-voting
                 .date, .time{
                     font-family: 'Inter';
                     font-size: 14px;
@@ -88,12 +111,17 @@
                 }
             }
         }
+
         .voting-content{
             background-color: var(--wp--preset--color--secondary-light);
             padding-bottom: 112px;
+<<<<<<< HEAD
             @include mixins.mobile{
                 padding-bottom: 108px;
             }
+=======
+
+>>>>>>> single-voting
             h2{
                 font-size: 2rem;
                 margin-top: 58px;
@@ -107,13 +135,21 @@
                     padding-top: 0px;
                 }
             }
+
             .options{
+<<<<<<< HEAD
                 @include mixins.mobile{
+=======
+
+                @include mixins.small{
+>>>>>>> single-voting
                     grid-template-columns: 1fr;
                     margin-bottom: 40px !important;
                 }    
             }
+
             .option-voting{
+
                 h3{
                     font-family: 'Oswald';
                     font-size: 1.5rem;
@@ -122,6 +158,7 @@
                     font-weight: 500;
                     text-transform: capitalize;     
                 }
+
                 p{
                     font-family: 'Inter';
                     font-size: 14px;
@@ -132,11 +169,16 @@
                     text-transform: uppercase;       
                 }
             }
+
             .actions{
+<<<<<<< HEAD
                 @include mixins.mobile{
                     display: flex;
                     flex-direction: column;
                 }
+=======
+
+>>>>>>> single-voting
                 a{
                     font-family: 'Inter';
                     font-size: 14px;
@@ -174,5 +216,13 @@
                 }
             }
         }        
+    }
+
+    &.logged-in {
+        #app{
+            .voting-content{
+                background-color: var(--wp--preset--color--helper-light);
+            }
+        }
     }
 }
