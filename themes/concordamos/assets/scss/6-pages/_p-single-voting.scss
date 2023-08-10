@@ -7,10 +7,13 @@
         .voting-header{
             min-height: 393px;
             padding-top: 3.8rem;
-            @media(max-width: 781px){
+
+            @media( max-width: 781px ){
                 padding-top: 2rem;   
             }
+
             .info{
+
                 .voting-breadcrumb{
                     font-size: 1.25rem;
                     margin-top: 10px;
@@ -18,24 +21,30 @@
                     font-weight: 600;
                     text-transform: uppercase;
                 }
+
                 .voting-title{
                     line-height: 112%;
                     letter-spacing: -0.48px;
                     margin-top: 8px;    
                 }
+
                 p{
                     max-width: 570px;
                     width: 100%;
                 }
+                
                 .meta{
                     margin-top: 25px;
+
                     .tax-tag{
                         font-size: 0.75rem;
                         font-weight: 700;
+
                         li{
                             padding: 0.125rem 0.325rem;    
                         }
                     }
+
                     .author{
                         font-size: 0.75rem;
                         color: #000;
@@ -43,7 +52,9 @@
                     }
                 }
             }
+
             .dates{
+
                 h3{
                     font-family: 'Oswald';
                     font-size: 1.5rem;
@@ -51,6 +62,7 @@
                     letter-spacing: -0.24px;
                     font-weight: 500;
                 }
+
                 .date, .time{
                     font-family: 'Inter';
                     font-size: 14px;
@@ -62,20 +74,26 @@
                 }
             }
         }
+
         .voting-content{
             background-color: var(--wp--preset--color--secondary-light);
             padding-bottom: 112px;
+
             h2{
                 font-size: 2rem;
                 margin-top: 58px;
                 margin-bottom: 58px;    
             }
+
             .options{
+
                 @include mixins.small{
                     grid-template-columns: 1fr;
                 }    
             }
+
             .option-voting{
+
                 h3{
                     font-family: 'Oswald';
                     font-size: 1.5rem;
@@ -84,6 +102,7 @@
                     font-weight: 500;
                     text-transform: capitalize;     
                 }
+
                 p{
                     font-family: 'Inter';
                     font-size: 14px;
@@ -94,7 +113,9 @@
                     text-transform: uppercase;       
                 }
             }
+
             .actions{
+
                 a{
                     font-family: 'Inter';
                     font-size: 14px;
@@ -114,5 +135,13 @@
                 }    
             }
         }        
+    }
+
+    &.logged-in {
+        #app{
+            .voting-content{
+                background-color: var(--wp--preset--color--helper-light);
+            }
+        }
     }
 }
