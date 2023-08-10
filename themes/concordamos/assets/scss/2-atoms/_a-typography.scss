@@ -1,169 +1,40 @@
-@font-face {
-    font-family: 'Oswald';
-    font-weight: 'semibold';
-    font-display: swap;
-    src: url('../../assets/fonts/Oswald-SemiBold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Oswald';
-    font-weight: 'bold';
-    font-display: swap;
-    src: url('../../assets/fonts/Oswald-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Oswald';
-    font-weight: 'medium';
-    font-display: swap;
-    src: url('../../assets/fonts/Oswald-Medium.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Oswald';
-    font-weight: 'normal';
-    font-display: swap;
-    src: url('../../assets/fonts/Oswald-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Inter Tight';
-    font-weight: normal;
-    font-display: swap;
-    src: url('../../assets/fonts/InterTight-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Inter Tight';
-    font-weight: bold;
-    font-display: swap;
-    src: url('../../assets/fonts/InterTight-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Inter';
-    font-weight: bold;
-    font-display: swap;
-    src: url('../../assets/fonts/Inter-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Inter';
-    font-weight: normal;
-    font-display: swap;
-    src: url('../../assets/fonts/Inter-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Inter';
-    font-weight: 'semibold';
-    font-display: swap;
-    src: url('../../assets/fonts/Inter-SemiBold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Libre Franklin';
-    font-weight: bold;
-    font-display: swap;
-    src: url('../../assets/fonts/LibreFranklin-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Libre Franklin';
-    font-weight: normal;
-    font-display: swap;
-    src: url('../../assets/fonts/LibreFranklin-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-weight: bold;
-    font-display: swap;
-    src: url('../../assets/OpenSans-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-weight: normal;
-    font-display: swap;
-    src: url('../../assets/OpenSans-Regular.ttf') format('truetype');
-}
-
-
-html{
-    font-size: var(--s-html);
-}
-
-body {
-	color: var(--wp--preset--color--low-dark);
-	font-family: $f_body;
-	line-height: 1.6;
-
-	.content {
-		// Headings
-		h1:not(.has-text-color),
-		h2:not(.has-text-color),
-		h3:not(.has-text-color),
-		h4:not(.has-text-color),
-		h5:not(.has-text-color),
-		h6:not(.has-text-color) {
-			color: var(--wp--preset--color--low-dark);
-		}
-	}
-}
-
-a {
-	color:var(--wp--preset--color--low-dark);
-	text-decoration: none;
-
-	&:hover {
-		color: var(--wp--preset--color--low-dark);
-		text-decoration: none;
-	}
-
-	> * {
-		text-decoration: none;
-	}
-
-	&:where(:not(.wp-element-button)) {
-		text-decoration: none !important;
-	}
-}
+@use "./../1-settings/_s-variables" as variables;
+@use "./../2-atoms/a-mixins" as mixins;
 
 h1 {
 	color: var(--wp--preset--color--low-dark);
-	font-family: $f_title;
+	font-family: variables.$f_title;
 	font-size: var(--wp--preset--font-size--bigger);
 	font-weight: 600;
     text-transform: uppercase;
 	line-height: 112%;
 
-	@include mobile {
+	@include mixins.mobile {
 		font-size: var(--wp--preset--font-size--large);
 	}
 }
 
 h2 {
 	color: var(--wp--preset--color--low-dark);
-	font-family: $f_title;
+	font-family: variables.$f_title;
 	font-size: var(--wp--preset--font-size--really-large);
 	font-weight: 600;
     text-transform: uppercase;
 	line-height: 112%;
 
-	@include mobile {
+	@include mixins.mobile {
 		font-size: var(--wp--preset--font-size--medium);
 	}
 }
 
 h3 {
 	color: var(--wp--preset--color--low-dark);
-	font-family: $f_title;
+	font-family: variables.$f_title;
 	font-size: var(--wp--preset--font-size--large);
 	font-weight: 400;
     
 
-	@include mobile {
+	@include mixins.mobile {
 		font-size: var(--wp--preset--font-size--intermediate-standard);
 	}
 
@@ -171,31 +42,31 @@ h3 {
 
 h4 {
 	color: var(--wp--preset--color--low-dark);
-	font-family: $f_title;
+	font-family: variables.$f_title;
 	font-size: var(--wp--preset--font-size--medium);
 	font-weight: 400;
     text-transform: uppercase;
 
-	@include mobile {
+	@include mixins.mobile {
 		font-size: var(--wp--preset--font-size--small);
 	}
 }
 
 h5 {
 	color: var(--wp--preset--color--low-dark);
-	font-family: $f_body;
+	font-family: variables.$f_body;
 	font-size: var(--wp--preset--font-size--default);
 	font-weight: 600;
     text-transform: uppercase;
 
-	@include mobile {
+	@include mixins.mobile {
 		font-size: var(--wp--preset--font-size--xxxs);
 	}
 }
 
 h6 {
 	color: var(--wp--preset--color--low-dark);
-	font-family: $f_body;
+	font-family: variables.$f_body;
 	font-size: var(--wp--preset--font-size--default);
 	font-weight: 600;
     text-transform: uppercase;

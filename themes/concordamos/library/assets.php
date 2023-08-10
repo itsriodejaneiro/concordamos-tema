@@ -521,7 +521,8 @@ class Assets {
 		$google_fonts = [
             'Inter' => [ '400' ],
 			'Inter Tight' => [ '300', '400', '700' ],
-			'Oswald' => [ '400', '600' ]
+			'Oswald' => [ '400', '600' ],
+			'Open Sans' => [ '400', '600', '700' ]
 		];
 
 		/**
@@ -553,10 +554,10 @@ class Assets {
 		foreach ( $google_fonts as $font_name => $font_variants ) {
 			if ( ! empty( $font_variants ) ) {
 				if ( ! is_array( $font_variants ) ) {
-					$font_variants = explode( ',', str_replace( ' ', '', $font_variants ) );
+					$font_variants = explode( ';', str_replace( ' ', '', $font_variants ) );
 				}
 
-				$font_families[] = $font_name . ':' . implode( ',', $font_variants );
+				$font_families[] = $font_name . ':wght@' . implode( ';', $font_variants );
 				continue;
 			}
 
@@ -568,7 +569,7 @@ class Assets {
 			'display' => 'swap',
 		];
 
-		return add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
+		return add_query_arg( $query_args, 'https://fonts.googleapis.com/css2' );
 	}
 
     public function gutenberg_block_enqueues() {
