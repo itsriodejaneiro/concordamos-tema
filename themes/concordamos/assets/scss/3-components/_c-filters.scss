@@ -1,0 +1,39 @@
+.filters-open{
+    display: inline-flex;
+    max-width: 700px;
+    width: 100%;
+    position: absolute;
+    gap: 10px;
+    margin-left: -220px;
+    justify-content: flex-start;
+    margin-top: 10px;
+    color: #111;
+    font-family: "Inter Tight";
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+
+    .radio-options{
+        display: flex;
+        gap: 5px;
+
+        label{
+            span{
+                padding-left: 3px;
+                font-size: 15px;
+
+                @include mixins.small{
+                    font-size: 10px;
+                    gap: 0;
+                }
+            }
+        }
+    }
+
+    @include mixins.small{
+        max-width: 328px;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+}

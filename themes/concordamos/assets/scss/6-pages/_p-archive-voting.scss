@@ -39,7 +39,8 @@ body.post-type-archive-voting{
                         height: 32px;
                         background-repeat: no-repeat;
                         position: relative;
-                        background-size: 100%;
+                        background-size: 90%;
+                        top: 5px;
 
                         @include mixins.small{
                             margin-top: 7px;
@@ -127,7 +128,6 @@ body.post-type-archive-voting{
                     }
                 }
 
-
                 .voting-card.present{
                     height: 317px;
                     max-width: 370px;
@@ -142,6 +142,7 @@ body.post-type-archive-voting{
         }
     }
     
+    @import "./../3-components/c-filters";
     @import "./../7-parts/p-content-post";
 }
 
