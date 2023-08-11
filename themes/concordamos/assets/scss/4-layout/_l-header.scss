@@ -160,7 +160,7 @@ header{
 
             }
             .primary-menu {
-                margin-right: 23px;
+                margin-right: 10px;
                 @media(max-width: 1136px){
                     margin-left: 0;
                     
@@ -181,7 +181,7 @@ header{
                 }
                 ul.menu {
                     padding-left: 0;
-                    margin-top: size(9);
+                    margin-top: 0.9rem;
 
                     > li {
                         margin-right: 32px;
@@ -293,6 +293,7 @@ header{
                 line-height: normal;
                 letter-spacing: -0.2px;
                 text-transform: uppercase;
+                text-decoration: none;
                 @media (max-width: 1250px){
                     left: 15px;    
                 }
