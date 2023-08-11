@@ -1,3 +1,4 @@
+$p_theme_assets: "/wp-content/themes/concordamos/assets";
 @use "./../1-settings/_s-variables" as variables;
 @use "./../2-atoms/a-mixins" as mixins;
 
@@ -220,22 +221,69 @@
         .search-votings{
             background-color: var(--wp--preset--color--primary-pure);
             padding-top: 0;
+
             @media(max-width: 781px){
                 padding-left: 0;
                 padding-right: 0;
                 z-index: 1;
                 margin-top: -500px;
             }
+
             @media(max-width: 602px){
                 margin-top: -700px;    
             }
+
             @media(max-width: 560px){
                 margin-top: -950px;    
     
             }
+
             @media(max-width: 500px){
                 margin-top: -1700px;    
     
+            }
+
+            form{
+
+                .wp-block-search__inside-wrapper {
+
+                    input[type="search"]{
+                        border: 3px solid #000;
+                        border-radius: 32px 0 0 32px;
+                        max-width: 1026px;
+                        width: 100%;
+                        height: 52px;
+                        padding: 4px 0 0 4px;
+
+                        &::placeholder{
+                            color: var(--wp--preset--color--low-light);
+                            font-family: Oswald;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            letter-spacing: -0.24px;
+                            padding: 16px 0 16px 32px;
+                        }
+                    }
+
+                    button{
+                        margin-left: 0;
+                        border-radius: 0 32px 32px 0;
+                        border: 3px solid #000;
+                        background-color: var(--wp--preset--color--helper-pure);
+                        border-left: 0;
+                        background-image: url($p_theme_assets+"/images/search-home.png");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        color: transparent !important;
+
+
+                        aria-label{
+                            z-index: 9999;
+                        }
+                    }
+                }
             }
           
             
@@ -266,24 +314,29 @@
                 } 
             }
         }
+
         .search-votings-bottom{
             padding-top: 0;
+
             figure{
                 text-align: center;
                 margin-top: 150px;
                 margin-bottom: 0;
             }
+
             .wp-block-cover__image-background{
                 @media(max-width: 601px){
                     object-fit: contain;
                 }
             }
+
             h3{
                 font-family: 'Inter';
                 font-size: 1.25rem;
                 font-weight: 600;
                 margin-top: 5px;
                 margin-bottom: 63px;
+
                 @media(max-width: 781px){
                     font-size: 0.875rem;
                 }

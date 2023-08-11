@@ -20,16 +20,17 @@ body.post-type-archive-voting{
                 
                 >summary{
                     display: flex;
-                    color: var(--low-light, #666);
+                    color: var(--wp--preset--color--low-light);
                     font-family: Oswald;
                     font-size: var(--wp--preset--font-size--medium);
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
                     letter-spacing: -0.24px;
-                    margin-top: 16px;
-                    margin-bottom: 16px;
-                    margin-left: 32px;
+                    margin: 0;
+                    position: relative;
+                    top: 10px;
+                    padding-left: 32px;
                     gap: 80px;
 
                     &:after{
@@ -40,7 +41,7 @@ body.post-type-archive-voting{
                         background-repeat: no-repeat;
                         position: relative;
                         background-size: 90%;
-                        top: 5px;
+                        top: 8px;
 
                         @include mixins.small{
                             margin-top: 7px;
