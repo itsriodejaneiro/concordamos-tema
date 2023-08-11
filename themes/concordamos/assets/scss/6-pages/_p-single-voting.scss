@@ -202,7 +202,7 @@
         }
         .main-footer{
             .date{
-                @include mobile{
+                @include mixins.mobile{
                     display: none;
                 }
             }
