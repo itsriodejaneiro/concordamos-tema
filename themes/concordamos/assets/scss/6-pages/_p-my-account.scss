@@ -1,0 +1,35 @@
+@use "./../1-settings/_s-variables" as variables;
+@use "./../2-atoms/a-mixins" as mixins;
+
+
+.page-template-template-my-account{
+    #app{
+        background-color: var(--wp--preset--color--helper-light);
+        #concordamos-my-account{
+            .my-account-header{
+                background-color: var(--wp--preset--color--helper-pure);
+            }
+            .my-account-settings{
+                background-color: var(--wp--preset--color--high-pure);    
+            }
+            .my-account-panel{
+                background-color: var(--wp--preset--color--helper-light);
+            }
+            .field-text{
+                label{
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            .primary{
+                margin-right: 20px;
+            }
+            .edit, .delete-acount{
+                padding: 0;
+            }
+        }   
+    }    
+}

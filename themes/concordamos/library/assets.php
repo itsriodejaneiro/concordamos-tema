@@ -320,6 +320,13 @@ class Assets {
 				},
 			],
 
+			'my-account' => [
+				'file' => '_p-my-account.css',
+				'preload_callback' => function() {
+					return !is_front_page() && is_page();
+				},
+			],
+
             'single' => [
                 'file' => '_p-single.css',
                 'preload_callback' => function() {
