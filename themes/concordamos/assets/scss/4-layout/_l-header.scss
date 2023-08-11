@@ -281,6 +281,9 @@ header{
         .header-login{
             display: flex;
             align-items: center;
+            max-width: 40px;
+            width: 100%;
+
             a{
                 position: relative;
                 left: 37px;

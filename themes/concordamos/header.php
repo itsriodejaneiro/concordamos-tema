@@ -42,7 +42,19 @@
                         <?= wp_nav_menu(['theme_location' => 'main-menu', 'container' => 'nav', 'menu_id' => 'main-menu', 'menu_class' => 'menu', 'container_class' => 'primary-menu']) ?>
                         <?= the_social_networks_menu() ?>
                         <div class='header-login'>
-                            <a href="/login/">LOGIN</a>
+
+                        <?php 
+                            if(is_user_logged_in()) {
+                        ?>
+                            <a href="/minha-conta/">Minha conta</a>
+                        <?php
+                            } else{
+                        ?>
+                            <a href="/minha-conta/">LOGIN</a>
+                        <?php
+                            }
+                        ?>
+                       
                         </div>
 
                     </div>
