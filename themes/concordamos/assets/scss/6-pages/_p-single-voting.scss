@@ -17,7 +17,6 @@
 
                 @include mixins.mobile{
                     margin-left: 16px;
-                    margin-right: 38px;
                 }
 
                 .voting-breadcrumb{
@@ -200,7 +199,14 @@
                     padding-bottom: 32px;
                 }
             }
-        }        
+        }
+        .main-footer{
+            .date{
+                @include mobile{
+                    display: none;
+                }
+            }
+        }
     }
 
     &.logged-in {
@@ -210,4 +216,5 @@
             }
         }
     }
+
 }
