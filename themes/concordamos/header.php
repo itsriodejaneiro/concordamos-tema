@@ -50,7 +50,7 @@
                         <?php
                             } else{
                         ?>
-                            <a href="/minha-conta/">LOGIN</a>
+                            <a href="/login/">LOGIN</a>
                         <?php
                             }
                         ?>
