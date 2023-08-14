@@ -118,6 +118,18 @@ body.post-type-archive-voting{
 
                 .voting-card{
                     margin-bottom: 9px;
+
+                    p{
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+
+                    main{
+                        .voting-card__staus{
+                            margin-top: 2px;
+                            margin-bottom: 2px;
+                        }
+                    }
                 }
 
                 .voting-card.past{
