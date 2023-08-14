@@ -109,10 +109,11 @@ body.post-type-archive-voting{
                 margin-top: 72px;
                 gap: 9px;
 
-                article:nth-of-type( 3n + 2 ){
-                    -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
-                    -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
-                    box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
+                article{
+
+                    &:hover{
+                        box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
+                    }
                 }
 
                 .voting-card{
