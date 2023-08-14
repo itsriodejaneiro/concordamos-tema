@@ -5,6 +5,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
 
 .home {
     #app{
+        padding-bottom: 80px;
         @include mixins.tablet{
             overflow-x: initial;
         }
@@ -219,6 +220,19 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
             }    
         }
 
+        .search-votings{
+            background-color: var(--wp--preset--color--primary-pure);
+            padding-top: 0;
+            @media(max-width:601px){
+                padding-bottom: 150px;
+            }
+            h2{
+                margin-top: 112px;
+                @include mixins.mobile{
+                    font-size: 2rem;
+                }
+            }
+        }
 
         .concordamos-votings-block{
             margin-bottom: 32px;
@@ -274,6 +288,10 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                     display: flex;
                     margin-top: 80px;
                     gap: 23px;
+                    @media(max-width: 900px){
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
 
                     .voting-card {
                         border: 3px solid black;
@@ -419,114 +437,21 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
 
         }
 
-
-        .search-votings{
-            background-color: var(--wp--preset--color--primary-pure);
-            padding-top: 0;
-
-            @media(max-width: 781px){
-                padding-left: 0;
-                padding-right: 0;
-                z-index: 1;
-                margin-top: -500px;
-            }
-
-            @media(max-width: 602px){
-                margin-top: -700px;    
-            }
-
-            @media(max-width: 560px){
-                margin-top: -950px;    
-    
-            }
-
-            @media(max-width: 500px){
-                margin-top: -1700px;    
-    
-            }
-
-
-
-            form{
-
-                .wp-block-search__inside-wrapper {
-
-                    input[type="search"]{
-                        border: 3px solid #000;
-                        border-radius: 32px 0 0 32px;
-                        max-width: 1026px;
-                        width: 100%;
-                        height: 52px;
-                        padding: 4px 0 0 4px;
-
-                        &::placeholder{
-                            color: var(--wp--preset--color--low-light);
-                            font-family: Oswald;
-                            font-size: 24px;
-                            font-style: normal;
-                            font-weight: 500;
-                            line-height: normal;
-                            letter-spacing: -0.24px;
-                            padding: 16px 0 16px 32px;
-                        }
-                    }
-
-                    button{
-                        margin-left: 0;
-                        border-radius: 0 32px 32px 0;
-                        border: 3px solid #000;
-                        background-color: var(--wp--preset--color--helper-pure);
-                        border-left: 0;
-                        background-image: url($p_theme_assets+"/images/search-home.png");
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        color: transparent !important;
-
-
-                        aria-label{
-                            z-index: 9999;
-                        }
-                    }
-                }
-            }
-          
-            
-            .wp-block-columns{
-                margin-top: 0;
-            }
-            
-            h2{
-                font-size: 4rem;
-                margin-top: 0px;
-                margin-bottom: 25px;
-                @media(max-width: 781px){
-                    font-size: 2rem;
-                    font-weight: 500;
-                    line-height: 130%;
-                    margin-top: 34rem;
-                }
-                @media(max-width: 602px){
-                    margin-top: 46rem;   
-                }
-                @media(max-width: 560px){
-                    margin-top: 63rem;    
-        
-                }
-                @media(max-width: 500px){
-                    margin-top: 108rem;    
-        
-                } 
-            }
-        }
-
         .search-votings-bottom{
             padding-top: 0;
             margin-top: -84px;
-
+            @media(max-width:601px){
+                margin-top: -336px;
+            }
             figure{
                 text-align: center;
                 margin-top: 120px;
                 margin-bottom: 0;
+                img{
+                    @include mixins.small{
+                        width: 90%;
+                    }
+                }
             }
 
             .wp-block-cover__image-background{
