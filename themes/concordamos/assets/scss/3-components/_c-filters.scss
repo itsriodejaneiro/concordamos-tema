@@ -1,22 +1,24 @@
 .filters-open{
     display: inline-flex;
-    max-width: 700px;
     width: 100%;
+    max-width: 267px;
     position: absolute;
     gap: 10px;
-    margin-left: -220px;
     justify-content: flex-start;
-    margin-top: 50px;
     color: #111;
     font-family: "Inter Tight";
     font-size: 17px;
     font-weight: 700;
     line-height: 150%;
-    letter-spacing: -0.16px;
+    background-color: white;
+    flex-direction: column;
+    margin-top: 20px;
+
 
     .radio-options{
         display: flex;
         gap: 5px;
+        flex-direction: column;
 
         label{
             span{

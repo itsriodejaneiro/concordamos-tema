@@ -9,15 +9,50 @@ body.post-type-archive-voting{
         background-color: var(--wp--preset--color--primary-light) !important;
 
         .voting-archive-content{
-
+            .filters-open{
+                display: flex;
+                width: 100%;
+                position: absolute;
+                justify-content: center;
+                color: #111;
+                font-family: "Inter Tight";
+                font-size: 17px;
+                font-weight: 700;
+                line-height: 150%;
+                background-color: white;
+                flex-direction: column;
+                margin-top: 11px;
+                border: 3px solid black;
+                border-top: none;
+                padding-left: 32px;
+                padding-right: 32px;
+            
+                .radio-options{
+                    label span{
+                        color: var(--low-dark, #000);
+                        font-family: Oswald;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: -0.24px;
+                        gap: 16px;
+                    }
+                }
+            }
             details{
-                border-radius: 32px;
+                display: flex;
                 border: 3px solid #000;
                 background: var(--wp--preset--color--high-pure);
                 height: 68px;
-                max-width: 270px;
-                width: 100%;
-                
+                max-width: 273px;
+                margin-left: 5px;
+                flex-direction: row;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+
+                       
                 >summary{
                     display: flex;
                     color: var(--wp--preset--color--low-light);
@@ -28,10 +63,16 @@ body.post-type-archive-voting{
                     line-height: normal;
                     letter-spacing: -0.24px;
                     margin: 0;
-                    position: relative;
-                    top: 10px;
+                    flex-direction: row;
+                    align-content: center;
+                    margin-top: 12px;
+                    margin-right: 34px;
+                    align-items: center;
+                    margin-right: 0px;
                     padding-left: 32px;
-                    gap: 80px;
+                    padding-right: 32px;
+                    justify-content: space-between;
+                
 
                     &:after{
                         content: '';
