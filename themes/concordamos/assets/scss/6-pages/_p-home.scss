@@ -223,9 +223,11 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
         .search-votings{
             background-color: var(--wp--preset--color--primary-pure);
             padding-top: 0;
+
             @media(max-width:601px){
                 padding-bottom: 150px;
             }
+
             h2{
                 margin-top: 112px;
                 @include mixins.mobile{
@@ -266,6 +268,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                             font-weight: 500;
                             letter-spacing: -0.24px;
                             padding: 16px 0 16px 32px;
+
                             @include mixins.mobile{
                                 font-family: 'Inter Tight';
                                 font-size: 16px;
@@ -301,10 +304,12 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                     display: flex;
                     margin-top: 80px;
                     gap: 23px;
+
                     @media(max-width: 900px){
                         flex-wrap: wrap;
                         justify-content: center;
                     }
+
                     @include mixins.mobile{
                         margin-top: 40px;    
                     }
@@ -335,6 +340,11 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                     
                         main {
                             padding: 2rem;
+
+                            >p{
+                                height: 20px;
+                                overflow: hidden;
+                            }
                         }
                     
                         h2 {
