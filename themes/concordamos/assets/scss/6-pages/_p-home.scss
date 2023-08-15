@@ -496,6 +496,22 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
             }       
         }
 
+        .concordamos-login-block{
+            .login-password-field{
+                a{
+                    text-decoration: none;
+                }
+            }
+            .login-button{
+                p{
+                    a{
+                        text-decoration: none;    
+                    }
+                }
+            }
+
+        }
+
         .its-logo-mobile{
             display: flex;
             justify-content: center;
