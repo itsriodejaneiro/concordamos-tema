@@ -48,6 +48,12 @@ footer.main-footer {
         display: flex;
         flex-direction: row !important;
         gap: 76px;
+        @include mixins.mobile{
+            gap: 32px;    
+        }
+        figure:nth-child(1){
+            margin-left: 17px;
+        }
     }
 
     @include mixins.tablet{

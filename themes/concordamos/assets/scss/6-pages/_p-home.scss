@@ -506,6 +506,15 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
             }       
         }
 
+        .its-logo-mobile{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            @media(min-width: 782px){
+                display: none;
+            }
+        }
+
         
         @import "./../3-components/c-button";
         @import "./../2-atoms/a-typography" ;
