@@ -21,11 +21,13 @@ body.post-type-archive-voting{
                 line-height: 150%;
                 background-color: white;
                 flex-direction: column;
-                margin-top: 11px;
+                margin-top: 9px;
+                margin-left: -3px;
                 border: 3px solid black;
                 border-top: none;
                 padding-left: 32px;
                 padding-right: 32px;
+                border-radius: 0 0 16px 16px;
             
                 .radio-options{
                     label span{
@@ -45,7 +47,7 @@ body.post-type-archive-voting{
                 border: 3px solid #000;
                 background: var(--wp--preset--color--high-pure);
                 height: 68px;
-                max-width: 273px;
+                width: 267px;
                 margin-left: 5px;
                 flex-direction: row;
                 align-content: center;
