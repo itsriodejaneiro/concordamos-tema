@@ -147,8 +147,6 @@ body.post-type-archive-voting{
             }
 
             .voting-archive-grid{
-                margin-top: 72px;
-                gap: 9px;
 
                 article{
 
@@ -158,7 +156,7 @@ body.post-type-archive-voting{
                 }
 
                 .voting-card{
-                    margin-bottom: 9px;
+                    margin-bottom: 5px;
 
                     p{
                         margin-top: 10px;
@@ -192,12 +190,39 @@ body.post-type-archive-voting{
                         background-color: var(--wp--preset--color--warning-pure);
                     }
                  }
+   
             }
-            
+
+            .voting-archive-paginator{
+                
+                .previous{
+
+                    a{
+                        background-image: url($p_theme_assets+"/images/arrow-left.png"); 
+                        background-repeat: no-repeat;
+                        position: relative;
+                        left: 25px;
+                        color: transparent;
+                    }
+                }
+
+                .next{
+
+                    a{
+                        background-image: url($p_theme_assets+"/images/arrow-right.png"); 
+                        background-repeat: no-repeat;
+                        position: relative;
+                        left: 25px;
+                        color: transparent;
+                    }
+                }
+            }
         }
+
     }
     
     @import "./../3-components/c-filters";
+    @import "./../3-components/c-pagination";
     @import "./../7-parts/p-content-post";
 }
 
