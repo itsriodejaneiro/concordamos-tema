@@ -28,7 +28,10 @@ body.post-type-archive-voting{
                 padding-left: 32px;
                 padding-right: 32px;
                 border-radius: 0 0 16px 16px;
-            
+                @include mixins.mobile{
+                    max-width: 55%;
+                    margin-top: 1px;
+                }
                 .radio-options{
                     label span{
                         color: var(--low-dark, #000);
@@ -53,7 +56,7 @@ body.post-type-archive-voting{
                 align-content: center;
                 align-items: center;
                 justify-content: center;
-
+                
                        
                 >summary{
                     display: flex;
@@ -92,15 +95,15 @@ body.post-type-archive-voting{
                     }
 
                     @include mixins.small{
-                        gap: 187px;
-                        margin-top: 10px;
+                        display: flex;
+                        align-items: center;
                     }
                 }
 
                 @include mixins.small{
                     border-radius: 16px;
                     max-width: 354px;
-                    width: 100%;
+                    margin-top: 16px;
                 }
             }
 
