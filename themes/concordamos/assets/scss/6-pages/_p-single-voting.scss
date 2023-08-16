@@ -4,6 +4,53 @@
 .single-voting{
 
     #app{
+
+        .panel-tabs{
+
+            .selected{
+                color: #000;
+                font-family: Oswald;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 130%; /* 31.2px */
+                letter-spacing: -0.24px;
+                text-transform: uppercase;
+            }
+        }
+
+        .voting-links-grid{
+            gap: 32px;
+
+            .voting-links-column{
+
+                .voting-links-card{
+                    height: auto;
+
+                    .voting-link {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        a{
+                            max-width: 352px;
+                            width: 100%;
+                        }
+                    }
+
+                    h2{
+                        margin: 0;
+                    }
+                }
+
+                .voting-links-scroll{
+
+                    h2{
+                        margin: 0;
+                    }
+                }
+            }
+        }
         
         .voting-header{
             min-height: 393px;
@@ -178,7 +225,7 @@
                     font-size: 1.5rem;
                     line-height: 130%;
                     letter-spacing: -0.24px;
-                    font-weight: 500;
+                    font-weight: 400;
                     align-items: center;       
                 }    
             }
