@@ -58,7 +58,11 @@ body.post-type-archive-voting{
                 align-content: center;
                 align-items: center;
                 justify-content: center;
-                
+                @include mixins.small{
+                    border-radius: 16px;
+                    max-width: 198px;
+                    margin-top: 16px;
+                }
                        
                 >summary{
                     display: flex;
