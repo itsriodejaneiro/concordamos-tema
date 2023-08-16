@@ -27,6 +27,8 @@ body.post-type-archive-voting{
                 border-top: none;
                 padding-left: 32px;
                 padding-right: 32px;
+                padding-top: 16px;
+                padding-bottom: 16px;
                 border-radius: 0 0 16px 16px;
                 @include mixins.mobile{
                     max-width: 55%;
@@ -41,7 +43,7 @@ body.post-type-archive-voting{
                         font-weight: 500;
                         line-height: normal;
                         letter-spacing: -0.24px;
-                        gap: 16px;
+                        padding: 8px;                    
                     }
                 }
             }
