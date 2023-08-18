@@ -60,11 +60,14 @@
                 padding-top: 2rem;   
             }
 
-            .info{
-
-                @include mixins.mobile{
-                    margin-left: 16px;
+            .container{
+                @include mixins.small{
+                    padding-left: 0;
+                    padding-right: 0;
                 }
+            }
+
+            .info{
 
                 .voting-breadcrumb{
                     font-size: 1.25rem;
@@ -137,6 +140,14 @@
                             margin-right: 58px;
                         }
                     }
+                    &::after{
+                        @media(max-width: 768px){
+                            width: calc(100% - 150px);
+                            left: 18px;
+                            top: 3.2rem;
+
+                        }
+                    }
 
                 }
                 
@@ -160,9 +171,9 @@
                 padding-bottom: 108px;
             }
 
-            h2{
+            .options-title-desktop{
                 font-size: 2rem;
-                margin-top: 58px;
+                margin-top: 8px;
                 margin-bottom: 58px;   
 
                 @include mixins.mobile{
@@ -217,7 +228,8 @@
                     font-weight: 600;
                     line-height: 150%;
                     letter-spacing: -0.14px;
-                    text-transform: uppercase;         
+                    text-transform: uppercase;
+                    text-decoration: none;         
                 }
                 
                 button{
@@ -242,9 +254,24 @@
             }
             .sidebar{
                 @include mixins.mobile{
-                    padding-top: 106px;
+                    padding-top: 26px;
                     padding-bottom: 32px;
                 }
+                .options-title-mobile{
+					color: #111;
+					font-family: 'Oswald';
+					font-size: 32px;
+					font-weight: 700;
+					line-height: 130%;
+					letter-spacing: -0.32px;
+					text-transform: uppercase;
+					text-align: center;
+					margin: 20px 0 25px;
+					@media(min-width: 782px){
+						display: none;
+					}
+				}
+               
             }
         }
         .main-footer{
