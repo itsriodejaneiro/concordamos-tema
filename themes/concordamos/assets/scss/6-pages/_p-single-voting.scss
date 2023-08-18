@@ -218,7 +218,7 @@
             .actions{
                 @include mixins.mobile{
                     display: flex;
-                    flex-direction: column;
+                    flex-direction: column-reverse;
                 }
 
                 a{
