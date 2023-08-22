@@ -26,6 +26,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
             
             h1{
                 margin-top: 0;
+                margin-bottom: 35px;
                 @media(max-width: 1105px){
                     font-size: 4.5rem;
                 }
@@ -40,7 +41,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                 }
             }
             figure{
-                margin-top: 40px;
+                margin-top: 5px;
             }
         }
         .participation{
@@ -63,7 +64,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                 margin-top: 0;
                 margin-bottom: 0;
                 h2{
-                    margin-top: 0;
+                    margin-top: 3px;
                     margin-bottom: 0;
                     color: var(--wp--preset--color--high-pure);
                     @media(max-width: 781px){
@@ -127,7 +128,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
         .mobiles-columns{
             background-color: var(--wp--preset--color--helper-pure);
             padding-top: 80px;
-            padding-bottom: 60px;
+            padding-bottom: 48px;
             @media(max-width: 781px){
                 display: flex;
                 flex-direction: column;
@@ -152,7 +153,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                     order: 1;
                 }
                 h2{
-                    margin-top: 12px;
+                    margin-top: 16px;
                     margin-bottom: 15px;
                     @media(max-width: 781px){
                         font-size: 3rem; 
@@ -197,7 +198,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
             }
             h2{
                 font-size: 4rem;
-                margin-top: 0;
+                margin-top: 16px;
                 margin-bottom: 2rem;
                 @media(max-width: 781px){
                     font-size: 3rem;
@@ -223,13 +224,14 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
         .search-votings{
             background-color: var(--wp--preset--color--primary-pure);
             padding-top: 0;
-
+            padding-bottom: 0;
             @media(max-width:601px){
-                padding-bottom: 150px;
+                padding-bottom: 80px;
             }
 
             h2{
-                margin-top: 112px;
+                margin-top: 116px;
+                margin-bottom: 55px;
                 @include mixins.mobile{
                     font-size: 2rem;
                     margin-top: 35px;
@@ -302,7 +304,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
 
                 .votings-block__cards{
                     display: flex;
-                    margin-top: 80px;
+                    margin-top: 55px;
                     gap: 23px;
 
                     @media(max-width: 900px){
@@ -479,8 +481,11 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
             }
             figure{
                 text-align: center;
-                margin-top: 120px;
+                margin-top: -10px;
                 margin-bottom: 0;
+                @media(max-width:601px){
+                    margin-top: 55px;    
+                }
                 img{
                     @include mixins.small{
                         width: 90%;
@@ -499,16 +504,22 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                 font-size: 1.25rem;
                 font-weight: 600;
                 margin-top: 5px;
-                margin-bottom: 0;
+                margin-bottom: -137px;
 
                 @media(max-width: 781px){
                     font-size: 0.875rem;
                 }
                 
-            }       
+            }
         }
 
         .concordamos-login-block{
+
+            .container{
+                @media(max-width: 601px){
+                    margin-top: 60px;    
+                }
+            }
             .login-password-field{
                 a{
                     text-decoration: none;
