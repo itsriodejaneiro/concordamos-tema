@@ -30,10 +30,13 @@ body.post-type-archive-voting{
                 padding-top: 16px;
                 padding-bottom: 16px;
                 border-radius: 0 0 16px 16px;
+                left: inherit;
+
                 @include mixins.mobile{
                     max-width: 55%;
                     margin-top: 1px;
                 }
+
                 .radio-options{
                     label span{
                         color: var(--low-dark, #000);
