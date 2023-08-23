@@ -10,16 +10,18 @@ header{
         width: 100%;
         transition: all .5s;
         background-color: var(--header-background-color);
-        min-height: 72px;
-        border-bottom: 3px solid var(--wp--preset--color--low-pure);
+        min-height: 70px;
+        border-bottom: 2px solid var(--wp--preset--color--low-pure);
+
         @media(max-width: 782px){
             border-bottom: 6px solid var(--wp--preset--color--low-pure);    
         }
 
         .container{
-            max-height: size(74);
+            max-height: size(66);
             max-width: size(1170);
             width: 100%;
+
             @media(max-width: 782px){
                 max-height: size(71);
             }  
