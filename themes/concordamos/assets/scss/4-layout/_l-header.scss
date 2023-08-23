@@ -25,6 +25,11 @@ header{
             @media(max-width: 782px){
                 max-height: size(71);
             }  
+
+            @include mobile{
+                height: 74px;
+                max-height: inherit;
+            }
         }
         
         .logged-in & {
@@ -53,6 +58,8 @@ header{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            height: 70px;
+
             @media(max-width: 1116px){
                 justify-content: flex-start;
                 
@@ -63,21 +70,33 @@ header{
 
             .logo {
                 margin-top: 1px;
+
                 img {
                     height: auto;
                     max-width: 100%;
+
                     @media(max-width: 1136px){
                         width: 80%;
                     }
+
                     @include mixins.tablet{
                         width: 78%;
                         margin: 15px 0 20px;
+                    }
+
+                    @include mobile{
+                        width: 202px;
+                        height: 40px;
+                        position: relative;
+                        top: 10px;
+                        left: 1px;
                     }
                 }
             }
 
         }
     }
+
     .header-content {
         button.toggle-menu {
             appearance: none;
@@ -88,6 +107,13 @@ header{
             width: 32px;
             height: 32px;
             display: none;
+            background-image: url($p_theme_assets+"/images/toggle.png");
+            width: 20px;
+            height: 13.5px;
+            background-repeat: no-repeat;
+            position: relative;
+            right: 6px;
+            top: 1px;
 
             @media (max-width: $desktop-width) {
                 display: block;
@@ -102,6 +128,7 @@ header{
                 position: absolute;
                 top: 13px;
                 transition: all .4s;
+                display: none;
             }
 
             &:after {
@@ -111,9 +138,11 @@ header{
 
             &.active {
                 justify-self: flex-end;
+
                 &:before, &:after{
                  background-color: var(--c-gray--darker);
                 }
+
                 &:before {
                     top: 16px;
                     transform: rotate(-45deg);
@@ -331,10 +360,14 @@ header{
 
                 .primary-menu {
                     order: 1;
+                    height: 400px;
+
                     ul {
                         flex-direction: column;
                         margin-left: 0;
                         padding-left: 0;
+                        position: relative;
+                        top: 185px;
 
                         li{
                             a{
