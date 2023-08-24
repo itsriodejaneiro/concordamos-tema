@@ -200,6 +200,27 @@ body.post-type-archive-voting{
             }
 
             .voting-archive-paginator{
+
+                li{
+                    a{
+                        text-decoration: none;
+                        color: #000;
+                        
+                        &:focus{
+                            outline: inherit;
+                        }
+                    }
+                }
+
+                .selected{
+                    a{
+                        text-decoration: none;
+                        color: #000;
+                        &:focus{
+                            outline-offset: inherit;
+                        }
+                    }
+                }
                 
                 .previous{
 
@@ -209,6 +230,7 @@ body.post-type-archive-voting{
                         position: relative;
                         left: 25px;
                         color: transparent;
+                        text-decoration: none;
                     }
                 }
 
@@ -220,6 +242,7 @@ body.post-type-archive-voting{
                         position: relative;
                         left: 25px;
                         color: transparent;
+                        text-decoration: none;
                     }
                 }
             }
