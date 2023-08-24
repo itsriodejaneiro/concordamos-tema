@@ -285,4 +285,23 @@
         @import "./../3-components/c-button";
         @import "./../2-atoms/a-typography" ;
     }
+
+    .concordamos-button-faq{
+        background-color: var(--wp--preset--color--primary-pure);
+        color: var(--wp--preset--color--low-dark);
+        border: 3px solid #000;
+        font-family: Oswald;
+        font-size: 1.5rem;
+        letter-spacing: -.24px;
+        font-weight: 500;
+        padding: 3px 23px 7px;
+        box-shadow: 4px 4px 0 0 #000;
+        position: fixed;
+        right: 32px;
+        border-radius: 32px;
+        bottom: 16px;
+        text-decoration: none;
+        z-index: 9;
+        
+    }
 }
