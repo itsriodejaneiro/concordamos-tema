@@ -231,6 +231,15 @@
                     text-transform: uppercase;
                     text-decoration: none;         
                 }
+
+                a.primary{
+                    padding: 10px 27px 9px;
+                    text-transform: none;
+                    font-family: "Oswald";
+                    font-size: 1.5rem;
+                    line-height: 130%;
+                    font-weight: 400;	
+                }
                 
                 button{
                     font-family: 'Oswald';
