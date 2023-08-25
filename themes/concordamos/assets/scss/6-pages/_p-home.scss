@@ -75,29 +75,40 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                 }
                 .participation-card{
                     padding-left: 52px;
+
                     @media(max-width: 781px){
                         padding-left: 0;
                         margin-bottom: 1rem;
                     }
+
                     h3{
                         font-family: 'Inter';
                         font-weight: 600;
                         font-size: 1.25rem;
                         margin-bottom: 1rem;
                         margin-top: 5px;
-                        color: var(--wp--preset--color--high-pure);
+                        color: var(--wp--preset--color--high-pure) !important;
                         text-transform: uppercase;
+
                         @media(max-width: 781px){
                             display: flex;
                             flex-direction: row;
                             justify-content: space-between;
                             margin-bottom: 1.8rem;
                         }
+
                         img{
                             margin-left: 10px;
                             color: var(--wp--preset--color--high-pure);
                         }
+
+                        >a{
+                            text-decoration: none;
+                            color: var(--wp--preset--color--high-pure) !important;
+
+                        }
                     }
+
                     h4{
                         font-family: 'Oswald';
                         font-weight: 500;
