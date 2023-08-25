@@ -62,7 +62,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                     background-repeat: no-repeat;
                     position: relative;
                     left: 25px;
-                    color: transparent;
+                    color: transparent !important;
                     text-decoration: none;
                 }
             }
@@ -73,7 +73,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                     background-repeat: no-repeat;
                     position: relative;
                     left: 25px;
-                    color: transparent;
+                    color: transparent !important;
                     text-decoration: none;
                 }
             }
