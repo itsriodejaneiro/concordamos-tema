@@ -1,5 +1,6 @@
 @use "./../1-settings/_s-variables" as variables;
 @use "./../2-atoms/a-mixins" as mixins;
+$p_theme_assets: "/wp-content/themes/concordamos/assets";
 
 
 .page-template-template-my-account{
