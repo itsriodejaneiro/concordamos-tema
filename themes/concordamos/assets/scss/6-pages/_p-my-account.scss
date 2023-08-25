@@ -31,5 +31,51 @@
                 padding: 0;
             }
         }   
+
+        .my-account-paginator{
+
+            li{
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    
+                    &:focus{
+                        outline: inherit;
+                    }
+                }
+            }
+
+            .selected{
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    &:focus{
+                        outline-offset: inherit;
+                    }
+                }
+            }
+            
+            .previous{
+                a{
+                    background-image: url($p_theme_assets+"/images/arrow-left.png"); 
+                    background-repeat: no-repeat;
+                    position: relative;
+                    left: 25px;
+                    color: transparent;
+                    text-decoration: none;
+                }
+            }
+
+            .next{
+                a{
+                    background-image: url($p_theme_assets+"/images/arrow-right.png"); 
+                    background-repeat: no-repeat;
+                    position: relative;
+                    left: 25px;
+                    color: transparent;
+                    text-decoration: none;
+                }
+            }
+        }
     }    
 }
