@@ -14,7 +14,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
             width: 100%;
             padding-left: 15px;
             padding-right: 15px;
-        } 
+        }
         .power{
             background-color: var(--wp--preset--color--secondary-pure);
             padding-top: 56px;
@@ -23,7 +23,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                 padding-left: 0;
                 padding-right: 0;
             }
-            
+
             h1{
                 margin-top: 0;
                 margin-bottom: 35px;
@@ -116,25 +116,25 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                         text-transform: capitalize;
                         margin-top: 0;
                         margin-bottom: 0;
-                        line-height: 130%; 
+                        line-height: 130%;
                         letter-spacing: -0.24px;
                         padding-right: 15px;
                         color: var(--wp--preset--color--high-pure);
                         @media(max-width: 781px){
                             margin-bottom: 1.6rem;
-                        }  
+                        }
                     }
                     .wp-block-separator{
                         @media(min-width: 782px){
                             display: none;
                         }
                         @media(max-width: 781px){
-                            border: solid 1.5px var(--wp--preset--color--high-pure); 
+                            border: solid 1.5px var(--wp--preset--color--high-pure);
                             margin-bottom: 0;
-                        }   
+                        }
                     }
                 }
-            } 
+            }
         }
         .mobiles-columns{
             background-color: var(--wp--preset--color--helper-pure);
@@ -157,7 +157,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                     margin-top: 55px;
                     flex: 0 0 50%;
                 }
-                
+
             }
             .mobiles-text-column{
                 @media(max-width: 781px){
@@ -167,16 +167,16 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                     margin-top: 16px;
                     margin-bottom: 15px;
                     @media(max-width: 781px){
-                        font-size: 3rem; 
+                        font-size: 3rem;
                     }
                 }
                 h3{
                     font-family: 'Inter';
                     font-size: 1.25rem;
-                    font-weight: 600;   
+                    font-weight: 600;
                 }
 
-                .wp-block-separator{                       
+                .wp-block-separator{
                     border: solid 2px #000;
                     @media(max-width: 781px){
                         margin-bottom: 5px;
@@ -187,9 +187,9 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                     margin-bottom: 30px;
                     padding-right: 0;
                     color: var(--wp--preset--color--low-dark);
-                    
+
                 }
-            }      
+            }
         }
         .create-vote{
             background-color: var(--wp--preset--color--high-light);
@@ -213,23 +213,23 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                 margin-bottom: 2rem;
                 @media(max-width: 781px){
                     font-size: 3rem;
-                }   
+                }
             }
             figure{
                 @media(max-width: 781px){
                     margin-top: 3.5rem;
-                }       
+                }
             }
             .create-vote-balloons-mobile{
                 @media(min-width: 782px){
                     display: none;
-                }   
+                }
             }
             .create-vote-balloons-desktop{
                 @media(max-width: 781px){
                     display: none;
-                }   
-            }    
+                }
+            }
         }
 
         .search-votings{
@@ -271,7 +271,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                         font-size: 16px;
                         font-family: 'Oswald';
                         @include mixins.mobile{
-                            border-radius: 16px 0 0 16px;    
+                            border-radius: 16px 0 0 16px;
                         }
 
                         &::placeholder{
@@ -285,9 +285,9 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                             @include mixins.mobile{
                                 font-family: 'Inter Tight';
                                 font-size: 16px;
-                                padding: 0 0 30px 10px;      
+                                padding: 0 0 30px 10px;
                             }
-                           
+
                         }
                     }
 
@@ -306,11 +306,11 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                         color: transparent !important;
                         @include mixins.mobile{
                             border-radius: 0 16px 16px 0;
-                            width: 30%;    
+                            width: 30%;
                         }
 
                     }
-                    
+
                 }
 
                 .votings-block__cards{
@@ -330,7 +330,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                     }
 
                     @include mixins.mobile{
-                        margin-top: 40px;    
+                        margin-top: 40px;
                     }
 
                     .voting-card {
@@ -338,16 +338,16 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                         border-radius: 16px;
                         background-color: #fff;
                         max-width: 370px;
-                        width: 100%;                    
+                        width: 100%;
                         height: 317px;
                         text-decoration: none;
-                    
+
                         header {
                             border-radius: 12px 12px 0 0 ;
                             display: flex;
                             justify-content: space-between;
                             padding: 5.5px 18px;
-                    
+
                             & > :first-child {
                                 font-weight: bold;
                             }
@@ -356,8 +356,8 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                                 margin-top: 3px;
                             }
                         }
-                        
-                    
+
+
                         main {
                             padding: 2rem;
 
@@ -366,7 +366,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                                 overflow: hidden;
                             }
                         }
-                    
+
                         h2 {
                             margin: 0;
                             text-transform: initial;
@@ -383,7 +383,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                                 color: #111;
                             }
                         }
-                    
+
                         p {
                             font-family: 'Inter Tight';
                             margin: 16px 0;
@@ -408,13 +408,13 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                                 margin-right: 4px;
                             }
                         }
-                    
+
                         &__tags {
                             display: flex;
                             gap: 8px;
                             margin: 0;
                             padding: 0;
-                    
+
                             li {
                                 border: 3px solid #EDE103;
                                 border-radius: 16px;
@@ -429,39 +429,39 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                                 font-weight: 700;
                             }
                         }
-                    
+
                         &.past {
-                    
+
                             span{
                                 color: #111;
                                 font-family: 'Inter Tight';
                                 font-size: 16px;
                                 font-weight: 700;
                                 line-height: 150%;
-                                letter-spacing: -0.16px;	
+                                letter-spacing: -0.16px;
                             }
-                    
+
                             header {
                                 background-color: #FF2E22;
                             }
                         }
-                    
+
                         &.present {
-                    
+
                             span{
                                 color: #111;
                                 font-family: 'Inter Tight';
                                 font-size: 16px;
                                 font-weight: 700;
                                 line-height: 150%;
-                                letter-spacing: -0.16px;	
+                                letter-spacing: -0.16px;
                             }
-                    
+
                             header {
                                 background-color: #26A9F9;
                             }
                         }
-                    
+
                         &.closed {
 
                             span{
@@ -470,12 +470,12 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                                 font-size: 16px;
                                 font-weight: 700;
                                 line-height: 150%;
-                                letter-spacing: -0.16px;	
+                                letter-spacing: -0.16px;
                             }
-                            
+
                             header {
-                                background-color: #FF2E22;	
-                                
+                                background-color: #FF2E22;
+
                             }
                         }
                     }
@@ -484,7 +484,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                             display: none;
                         }
                     }
-                    
+
                 }
             }
 
@@ -493,16 +493,20 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
         .search-votings-bottom{
             padding-top: 0;
             margin-top: -44px;
-            @media(max-width:601px){
-                margin-top: -336px;
-                padding-top: 70px;
-            }
+
+			@media( max-width: 601px ) {
+				margin-top: -336px;
+				padding-top: 70px;
+				position: relative;
+    			z-index: 0;
+			}
+
             figure{
                 text-align: center;
                 margin-top: -10px;
                 margin-bottom: 0;
                 @media(max-width:601px){
-                    margin-top: 55px;    
+                    margin-top: 55px;
                 }
                 img{
                     @include mixins.small{
@@ -527,7 +531,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
                 @media(max-width: 781px){
                     font-size: 0.875rem;
                 }
-                
+
             }
         }
 
@@ -535,7 +539,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
 
             .container{
                 @media(max-width: 601px){
-                    margin-top: 60px;    
+                    margin-top: 60px;
                 }
             }
             .login-password-field{
@@ -546,7 +550,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
             .login-button{
                 p{
                     a{
-                        text-decoration: none;    
+                        text-decoration: none;
                     }
                 }
             }
@@ -562,7 +566,7 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
             }
         }
 
-        
+
         @import "./../3-components/c-button";
         @import "./../2-atoms/a-typography" ;
     }
