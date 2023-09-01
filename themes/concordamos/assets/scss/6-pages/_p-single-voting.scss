@@ -35,6 +35,22 @@
                         a{
                             max-width: 352px;
                             width: 100%;
+
+                            @include mixins.small{
+                                max-width: 180px;
+                                width: 100%;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+
+                            @include mixins.mobile{
+                                max-width: 180px;
+                                width: 100%;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
                         }
                     }
 

@@ -33,7 +33,8 @@ body.post-type-archive-voting{
                 left: inherit;
 
                 @include mixins.mobile{
-                    max-width: 55%;
+                    max-width: 354px;
+                    width: 100%;
                     margin-top: 1px;
                 }
 
@@ -61,10 +62,12 @@ body.post-type-archive-voting{
                 align-content: center;
                 align-items: center;
                 justify-content: center;
+
                 @include mixins.small{
                     border-radius: 16px;
                     max-width: 198px;
                     margin-top: 16px;
+                    width: 100% !important;
                 }
                        
                 >summary{
@@ -128,6 +131,14 @@ body.post-type-archive-voting{
                 height: 68px;
                 max-width: 870px;
                 width: 100%;
+
+                @include mixins.small{
+                    max-width: inherit !important;
+                }
+
+                @include mixins.mobile{
+                    max-width: inherit !important;
+                }
                 
                 button{
                     max-width: 160px;
@@ -178,7 +189,6 @@ body.post-type-archive-voting{
                 }
 
                 .voting-card.past{
-                    height: 317px;
                     max-width: 370px;
                     width: 100%;
 
@@ -188,7 +198,6 @@ body.post-type-archive-voting{
                 }
 
                 .voting-card.present{
-                    height: 317px;
                     max-width: 370px;
                     width: 100%;
 

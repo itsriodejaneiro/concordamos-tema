@@ -302,6 +302,10 @@
         bottom: 16px;
         text-decoration: none;
         z-index: 9;
+
+        @include mobile{
+            bottom: 93px;
+        }
         
     }
 }

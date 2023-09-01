@@ -10,27 +10,52 @@ $p_theme_assets: "/wp-content/themes/concordamos/assets";
             .my-account-header{
                 background-color: var(--wp--preset--color--helper-pure);
             }
+
             .my-account-settings{
                 background-color: var(--wp--preset--color--high-pure);    
             }
+            
             .my-account-panel{
                 background-color: var(--wp--preset--color--helper-light);
+                
+                .panel-tab{
+                    font-family: 'Inter';
+                }
             }
+
             .field-text{
                 label{
                     display: flex;
                     flex-direction: column;
+
                     span{
                         margin-bottom: 15px;
                     }
                 }
             }
+
             .primary{
                 margin-right: 20px;
             }
+
             .edit, .delete-acount{
                 padding: 0;
             }
+
+            .my-account{
+                .my-account-settings{
+                    .container{                        
+                        .my-account-field{
+                            dl{
+                                dt{
+                                    font-weight: 600 !important;
+                                }
+                            }
+                        }
+                    }
+                }            
+            }
+
         }   
 
         .my-account-paginator{

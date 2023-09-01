@@ -13,6 +13,11 @@
         font-weight: bold;
         font-size: 300px;
         margin: 100px 0 20px 0;
+
+        @include mobile{
+            font-size: 200px;
+        
+        }
         
         .error {
             position: absolute;

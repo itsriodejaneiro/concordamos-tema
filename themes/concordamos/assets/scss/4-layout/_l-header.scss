@@ -207,9 +207,11 @@ header{
                 @media (max-width: $desktop-width) {
                     margin-right: 0;
                 }
+
                 @media(max-width: 1041px){
                     margin-left: 0;
                 }
+
                 ul.menu {
                     padding-left: 0;
                     margin-top: 0.9rem;
@@ -369,7 +371,7 @@ header{
                         margin-left: 0;
                         padding-left: 0;
                         position: relative;
-                        top: 185px;
+                        top: 207px;
 
                         li{
                             a{
@@ -398,6 +400,7 @@ header{
                     order: 2;
                     position: relative;
                     left: 7px;
+                    top: 27px;
                 }
             }
         }
