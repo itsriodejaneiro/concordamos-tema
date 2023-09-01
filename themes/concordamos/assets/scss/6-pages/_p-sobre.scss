@@ -303,7 +303,11 @@
         text-decoration: none;
         z-index: 9;
 
-        @include mobile{
+        @include mixins.mobile{
+            bottom: 93px;
+        }
+
+        @include mixins.small{
             bottom: 93px;
         }
         

@@ -51,6 +51,7 @@ body.post-type-archive-voting{
                     }
                 }
             }
+
             details{
                 display: flex;
                 border: 3px solid #000;
@@ -73,7 +74,7 @@ body.post-type-archive-voting{
                 >summary{
                     display: flex;
                     color: var(--wp--preset--color--low-light);
-                    font-family: Oswald;
+                    font-family: 'Oswald';
                     font-size: var(--wp--preset--font-size--medium);
                     font-style: normal;
                     font-weight: 500;
@@ -89,7 +90,7 @@ body.post-type-archive-voting{
                     padding-left: 32px;
                     padding-right: 32px;
                     justify-content: space-between;
-                
+                    border: 1px solid red;
 
                     &:after{
                         content: '';

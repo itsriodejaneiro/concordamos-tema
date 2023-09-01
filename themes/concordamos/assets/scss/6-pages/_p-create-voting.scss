@@ -5,12 +5,15 @@
     #app{
         background-color: var(--wp--preset--color--secondary-light);
         padding-bottom: 54px;
+
         @media(max-width: 781px){
             padding-bottom: 74px;    
         }
+
         .container{
             max-width: 585px;
         }
+        
         h2{
             margin-top: 78px;
             margin-bottom: 20px;
