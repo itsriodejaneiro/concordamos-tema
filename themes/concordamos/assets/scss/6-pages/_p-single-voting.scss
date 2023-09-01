@@ -311,7 +311,7 @@
         }
     }
 
-    &.logged-in {
+    &.logged-in.admin-bar {
         #app{
             .voting-content{
                 background-color: var(--wp--preset--color--helper-light);

@@ -32,7 +32,7 @@ header{
             }
         }
         
-        .logged-in & {
+        .logged-in.admin-bar & {
             top: 32px;
 
             &.scrolled {
