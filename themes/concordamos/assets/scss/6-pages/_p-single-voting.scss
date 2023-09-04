@@ -267,19 +267,29 @@
                 }    
             }
             .voting-modal{
+
                 main{
+
                     h2{
                         margin-top: 5px;
                         margin-bottom: 10px;
+                        display: block;
                     }
+
                     .modal-text{
                         text-transform: none;
                     }
+
                     .primary{
                         margin-right: 18px;    
                     }    
+
+                    p{
+                        display: block;
+                    }
                 }
             }
+
             .sidebar{
                 @include mixins.mobile{
                     padding-top: 26px;
