@@ -17,6 +17,7 @@ function the_social_networks_menu($image = true) {
 
     $icons_color = [
         'facebook'  => 'Facebook',
+		'linkedin'  => 'LinkedIn',
         'twitter'   => 'Twitter',
         'youtube'   => 'Youtube',
         'instagram' => 'Instagram',
