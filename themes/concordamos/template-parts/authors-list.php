@@ -4,7 +4,7 @@ if (empty($authors) || !is_array($authors)) {
 }
 ?>
 <div class="post-content--section-title">
-    <?= count($authors) > 1 ? __('Autores', 'concordamos-theme') : __('Autor', 'concordamos-theme') ?>
+    <?= count($authors) > 1 ? __('Authors', 'concordamos-theme') : __('Author', 'concordamos-theme') ?>
 </div>
 <?php foreach ($authors as $author): ?>
     <div class="post-content--author">

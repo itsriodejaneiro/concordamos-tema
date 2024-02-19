@@ -59,13 +59,13 @@ if ( post_password_required() )
         ?>
         <nav class="navigation comment-navigation" role="navigation">
             <h1 class="screen-reader-text section-heading"><?php _e( 'Comment navigation', 'concordamos-theme' ); ?></h1>
-            <div class="nav-previous"><?php previous_comments_link( __( '&larr; Mais antigos', 'concordamos-theme' ) ); ?></div>
-            <div class="nav-next"><?php next_comments_link( __( 'Mais Novos &rarr;', 'concordamos-theme' ) ); ?></div>
+            <div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'concordamos-theme' ) ); ?></div>
+            <div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'concordamos-theme' ) ); ?></div>
         </nav><!-- .comment-navigation -->
         <?php endif; // Check for comment navigation ?>
 
         <?php if ( ! comments_open() && get_comments_number() ) : ?>
-        <p class="no-comments"><?php _e( 'Os comentários estão desabilitados.' , 'concordamos-theme' ); ?></p>
+        <p class="no-comments"><?php _e( 'Comments are disabled.' , 'concordamos-theme' ); ?></p>
         <?php endif; ?>
 
     <?php endif; // have_comments() ?>

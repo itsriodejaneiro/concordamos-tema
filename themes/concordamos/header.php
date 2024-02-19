@@ -46,11 +46,11 @@
                         <?php 
                             if(is_user_logged_in()) {
                             ?>
-                                <a href="/minha-conta/"><?php _e('Minha conta', 'concordamos'); ?></a>
+                                <a href="/minha-conta/"><?php _e('My account', 'concordamos-theme'); ?></a>
                             <?php
                             } else {
                             ?>
-                                <a href="/login/"><?php _e('LOGIN', 'concordamos'); ?></a>
+                                <a href="/login/"><?php _e('LOGIN', 'concordamos-theme'); ?></a>
                             <?php
                             }
                             ?>

@@ -17,7 +17,7 @@ if ( $taxonomy_terms && ! is_wp_error( $taxonomy_terms ) ) :
     <div class="filter-posts">
         <form name="filterposts">
             <select class="filter-options-form" name="select" size="1" onChange="goFilter()">
-                <option <?php echo ( $selected == '' ) ? 'selected' : '' ?> class="filter-options-item" value="<?php echo $current_url ?>filter_term=all"><?php _e( 'Filtrar por...', 'escola-de-dados' ); ?></option>
+                <option <?php echo ( $selected == '' ) ? 'selected' : '' ?> class="filter-options-item" value="<?php echo $current_url ?>filter_term=all"><?php _e( 'Filter by...', 'escola-de-dados' ); ?></option>
                 <?php foreach ( $taxonomy_terms as $term ) : ?>
                     <option <?php echo ( $selected == $term->slug ) ? 'selected' : '' ?> class="filter-options-item" value="<?php echo $current_url ?>filter_term=<?php echo $term->slug; ?>"><?php echo $term->name; ?></option>
                 <?php endforeach; ?>

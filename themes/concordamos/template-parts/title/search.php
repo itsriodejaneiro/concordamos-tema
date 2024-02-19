@@ -6,9 +6,9 @@
 $search_query = get_search_query( false );
 
 if ( ! empty( $search_query ) ) {
-    $title = 'Você pesquisou por: <span class="highlighted">' . esc_attr( $search_query  ) . '</span>';
+    $title = __('You searched for:', 'concordamos-theme') . ' <span class="highlighted">' . esc_attr( $search_query  ) . '</span>';
 } else {
-    $title = 'Pesquisar';
+    $title = __('Search', 'concordamos-theme');
 } ?>
 
 <header class="c-title title-search">

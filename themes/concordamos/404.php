@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 <div class="error-404">
         <h1>
-            <span class="error"><?php _e('erro', 'concordamos-theme') ?></span>
+            <span class="error"><?php _e('error', 'concordamos-theme') ?></span>
             <span class="num">404</span>
         </h1>
 
-        <p><?php _e('Página não encontrada', 'concordamos-theme') ?></p>
-        <a href="<?= home_url() ?>" class="button"> <span><?php _e('Voltar para a página inicial', 'concordamos-theme') ?></span> </a>
+        <p><?php _e('Page not found', 'concordamos-theme') ?></p>
+        <a href="<?= home_url() ?>" class="button"> <span><?php _e('Back to Homepage', 'concordamos-theme') ?></span> </a>
     </div>
 
 <?php get_footer(); ?>
