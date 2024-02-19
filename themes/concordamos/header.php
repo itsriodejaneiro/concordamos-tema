@@ -45,15 +45,15 @@
 
                         <?php 
                             if(is_user_logged_in()) {
-                        ?>
-                            <a href="/minha-conta/">Minha conta</a>
-                        <?php
-                            } else{
-                        ?>
-                            <a href="/login/">LOGIN</a>
-                        <?php
+                            ?>
+                                <a href="/minha-conta/"><?php _e('Minha conta', 'concordamos'); ?></a>
+                            <?php
+                            } else {
+                            ?>
+                                <a href="/login/"><?php _e('LOGIN', 'concordamos'); ?></a>
+                            <?php
                             }
-                        ?>
+                            ?>
                        
                         </div>
 
