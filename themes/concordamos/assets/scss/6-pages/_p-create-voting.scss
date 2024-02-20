@@ -1,19 +1,19 @@
 @use "./../1-settings/_s-variables" as variables;
 @use "./../2-atoms/a-mixins" as mixins;
 
-.page-criar-votacao{
+.page-template-template-create-voting {
     #app{
         background-color: var(--wp--preset--color--secondary-light);
         padding-bottom: 54px;
 
         @media(max-width: 781px){
-            padding-bottom: 74px;    
+            padding-bottom: 74px;
         }
 
         .container{
             max-width: 585px;
         }
-        
+
         h2{
             margin-top: 78px;
             margin-bottom: 20px;
@@ -24,7 +24,7 @@
         p{
             margin-bottom: -16px;
             @media(max-width: 781px){
-                margin-bottom: 0;    
+                margin-bottom: 0;
             }
         }
         .field-checkbox{
@@ -36,11 +36,11 @@
             font-size: 1.5rem;
             margin-top: 40px;
             margin-bottom: 20px;
-            line-height: 130%; 
+            line-height: 130%;
             letter-spacing: -0.24px;
             padding-right: 15px;
             @media(max-width: 781px){
-                margin-top: 25px;    
+                margin-top: 25px;
             }
         }
         .radio-options{
@@ -53,15 +53,15 @@
         }
         .option{
             @media(max-width: 781px){
-                margin-bottom: 5px;    
-            } 
+                margin-bottom: 5px;
+            }
             span{
             font-family: 'Oswald';
             font-size: 1.5rem;
             line-height: 130%;
             letter-spacing: -0.24px;
             font-weight: 500;
-            margin-bottom: 11px;     
+            margin-bottom: 11px;
             }
         }
         .button-full{
@@ -69,7 +69,7 @@
             font-size: 1.5rem;
             line-height: 130%;
             letter-spacing: -0.24px;
-            font-weight: 500; 
+            font-weight: 500;
         }
         .voting-modal{
             h2{
@@ -77,18 +77,18 @@
                 margin-top: 5px;
                 margin-bottom: 10px;
                 @media(max-width: 782px){
-                    margin-top: 10px;    
+                    margin-top: 10px;
                 }
             }
             .buttons{
                 margin-top: 45px;
                 @media(max-width: 782px){
                     margin-top: 22px;
-                    margin-bottom: 5px;    
+                    margin-bottom: 5px;
                 }
                 .primary{
-                    margin-right: 18px;    
-                }    
+                    margin-right: 18px;
+                }
             }
         }
     }
