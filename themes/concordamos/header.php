@@ -43,18 +43,18 @@
                         <?= the_social_networks_menu() ?>
                         <div class='header-login'>
 
-                        <?php 
+                        <?php
                             if(is_user_logged_in()) {
                             ?>
-                                <a href="/minha-conta/"><?php _e('My account', 'concordamos-theme'); ?></a>
+                                <a href="<?= get_permalink( Concordamos\get_page_by_template( 'concordamos/template-my-account.php' ) ) ?>"><?php _e('My account', 'concordamos-theme'); ?></a>
                             <?php
                             } else {
                             ?>
-                                <a href="/login/"><?php _e('LOGIN', 'concordamos-theme'); ?></a>
+                                <a href="<?= get_permalink( Concordamos\get_page_by_template( 'concordamos/template-login.php' ) ) ?>"><?php _e('LOGIN', 'concordamos-theme'); ?></a>
                             <?php
                             }
                             ?>
-                       
+
                         </div>
 
                     </div>
