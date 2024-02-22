@@ -34,7 +34,7 @@
                             ?>
                         </a>
                     </div>
-                    <button menu-container-class='primary-menu' class="toggle-menu" aria-label="<?= __("Toggle menu visibility", "concordamos-theme") ?>">
+                    <button menu-container-class='primary-menu' class="toggle-menu" aria-label="<?= __('Toggle menu visibility', "concordamos-theme") ?>">
 
                     </button>
 
@@ -50,7 +50,7 @@
                             <?php
                             } else {
                             ?>
-                                <a href="<?= get_permalink( Concordamos\get_page_by_template( 'concordamos/template-login.php' ) ) ?>"><?php _e('LOGIN', 'concordamos-theme'); ?></a>
+                                <a href="<?= get_permalink( Concordamos\get_page_by_template( 'concordamos/template-login.php' ) ) ?>"><?php _e('Login', 'concordamos-theme'); ?></a>
                             <?php
                             }
                             ?>

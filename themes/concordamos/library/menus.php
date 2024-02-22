@@ -3,14 +3,14 @@
 namespace jaci;
 
 function custom_menus() {
-    register_nav_menu('main-menu', __('Menu Principal', 'concordamos-theme'));
-    /* register_nav_menu('footer-menu', __('Menu de Rodapé', 'concordamos-theme')); */
+    register_nav_menu('main-menu', __('Main menu', 'concordamos-theme'));
+    /* register_nav_menu('footer-menu', __('Footer menu', 'concordamos-theme')); */
 
-    register_nav_menu('social-networks', __('Redes Sociais', 'concordamos-theme'));
-    register_nav_menu('footer-menu-first', __('Menu de Rodapé 1', 'concordamos-theme'));
-    register_nav_menu('footer-menu-second', __('Menu de Rodapé 2', 'concordamos-theme'));
-    register_nav_menu('footer-menu-third', __('Menu de Rodapé 3', 'concordamos-theme'));
-    register_nav_menu('footer-menu-fourth', __('Menu de Rodapé 4', 'concordamos-theme'));
+    register_nav_menu('social-networks', __('Social networks', 'concordamos-theme'));
+    register_nav_menu('footer-menu-first', __('Footer menu 1', 'concordamos-theme'));
+    register_nav_menu('footer-menu-second', __('Footer menu 2', 'concordamos-theme'));
+    register_nav_menu('footer-menu-third', __('Footer menu 3', 'concordamos-theme'));
+    register_nav_menu('footer-menu-fourth', __('Footer menu 4', 'concordamos-theme'));
 }
 
 add_action('init', 'jaci\\custom_menus');

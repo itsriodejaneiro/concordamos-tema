@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Pagebuilder sem título
+ * Template Name: Pagebuilder without titles
  */
 get_header();
 the_post();

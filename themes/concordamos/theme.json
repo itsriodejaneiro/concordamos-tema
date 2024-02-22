@@ -110,57 +110,57 @@
             "dropCap": false,
             "fontSizes": [
                 {
-                    "name": "Muito pequena",
+                    "name": "Very small",
                     "slug": "xxxs",
                     "size": "0.75rem"
                 },
                 {
-                    "name": "Pequena",
+                    "name": "Small",
                     "slug": "small",
                     "size": "0.875rem"
                 },
                 {
-                    "name": "Padrão",
+                    "name": "Default",
                     "slug": "default",
                     "size": "1rem"
                 },
                 {
-                    "name": "Padrão intermediário",
+                    "name": "Intermediate standard",
                     "slug": "intermediate-standard",
                     "size": "1.25rem"
                 },
                 {
-                    "name": "Média",
+                    "name": "Medium",
                     "slug": "medium",
                     "size": "1.5rem"
                 },
                 {
-                    "name": "Grande",
+                    "name": "Large",
                     "slug": "large",
                     "size": "2rem"
                 },
                 {
-                    "name": "Meio grande",
+                    "name": "Intermediate large",
                     "slug": "intermediate-large",
                     "size": "2.5rem"
                 },
                 {
-                    "name": "Muito grande",
+                    "name": "Really large",
                     "slug": "really-large",
                     "size": "3rem"
                 },
                 {
-                    "name": "Muito grande",
+                    "name": "So large",
                     "slug": "so-large",
                     "size": "4rem"
                 },
                 {
-                    "name": "Muito grande",
+                    "name": "Bigger",
                     "slug": "bigger",
                     "size": "5rem"
                 },
                 {
-                    "name": "Gigante",
+                    "name": "Giant",
                     "slug": "giant",
                     "size": "6rem"
                 }

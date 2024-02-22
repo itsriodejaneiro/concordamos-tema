@@ -59,8 +59,8 @@ if ( post_password_required() )
         ?>
         <nav class="navigation comment-navigation" role="navigation">
             <h1 class="screen-reader-text section-heading"><?php _e( 'Comment navigation', 'concordamos-theme' ); ?></h1>
-            <div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'concordamos-theme' ) ); ?></div>
-            <div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'concordamos-theme' ) ); ?></div>
+            <div class="nav-previous"><?php previous_comments_link( '&larr; ' . __( 'Older Comments', 'concordamos-theme' ) ); ?></div>
+            <div class="nav-next"><?php next_comments_link( __( 'Newer Comments', 'concordamos-theme' ) . ' &rarr;' ); ?></div>
         </nav><!-- .comment-navigation -->
         <?php endif; // Check for comment navigation ?>
 

@@ -1,360 +1,363 @@
-# Copyright (C) 2024 Hacklab
-# This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Concordamos 1.0.5\n"
+"Project-Id-Version: Concordamos 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/concordamos\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2024-02-22T17:54:23+00:00\n"
+"PO-Revision-Date: 2024-02-22 15:03-0300\n"
+"Last-Translator: \n"
+"Language-Team: Português do Brasil\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-02-22T17:54:23+00:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.7.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 "X-Domain: concordamos-theme\n"
+"X-Loco-Version: 2.6.1; wp-5.9.2\n"
 
 #. Theme Name of the theme
 msgid "Concordamos"
-msgstr ""
+msgstr "Concordamos"
 
 #. Theme URI of the theme
 #. Author URI of the theme
 msgid "https://hacklab.com.br/"
-msgstr ""
+msgstr "https://hacklab.com.br/"
 
 #. Description of the theme
 msgid "Tema base para desenvolvimento de novos sites."
-msgstr ""
+msgstr "Tema base para desenvolvimento de novos sites."
 
 #. Author of the theme
 msgid "Hacklab"
-msgstr ""
+msgstr "Hacklab"
 
 #: 404.php:4
 msgid "Error"
-msgstr ""
+msgstr "Erro"
 
 #: 404.php:8
 msgid "Page not found"
-msgstr ""
+msgstr "Página não encontrada"
 
 #: 404.php:9
 msgid "Back to home"
-msgstr ""
+msgstr "Retornar para a home"
 
 #. translators: %s: Post title.
 #: comments.php:28
 msgctxt "comments title"
 msgid "One thought on &ldquo;%s&rdquo;"
-msgstr ""
+msgstr "Um pensamento sobre &ldquo;%s&rdquo;"
 
 #. translators: 1: Number of comments, 2: Post title.
 #: comments.php:32
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s pensamento sobre &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s pensamentos sobre &ldquo;%2$s&rdquo;"
 
 #: comments.php:61
 msgid "Comment navigation"
-msgstr ""
+msgstr "Navegar comentários"
 
 #: comments.php:62
 msgid "Older Comments"
-msgstr ""
+msgstr "Comentários mais antigos"
 
 #: comments.php:63
 msgid "Newer Comments"
-msgstr ""
+msgstr "Comentários mais novos"
 
 #: comments.php:68
 msgid "Comments are disabled."
-msgstr ""
+msgstr "Comentários estão desabilitados."
 
 #: header.php:37
 msgid "Toggle menu visibility"
-msgstr ""
+msgstr "Alternar visibilidade do menu"
 
 #: header.php:49
 msgid "My account"
-msgstr ""
+msgstr "Minha conta"
 
 #: header.php:53
 msgid "Login"
-msgstr ""
+msgstr "Login"
 
 #: library/customizer/footer/index.php:11
 msgid "Footer"
-msgstr ""
+msgstr "Rodapé"
 
 #: library/customizer/footer/index.php:27
 msgid "Footer copyright text"
-msgstr ""
+msgstr "Texto de direitos autorais (copyright) no rodapé"
 
 #: library/customizer/footer/index.php:28
 msgid "Leave it empty to hide all copyright info."
-msgstr ""
+msgstr "Deixar vazio para esconder todas as informações de copyright."
 
 #: library/customizer/footer/index.php:50
 msgid "Display year and site name aside copyright info?"
-msgstr ""
+msgstr "Exibir ano e nome do site ao lado da informação de copyright?"
 
 #: library/customizer/footer/index.php:68
 msgid "Footer background"
-msgstr ""
+msgstr "Cor de fundo do rodapé"
 
 #: library/customizer/footer/index.php:90
 msgid "Footer text color"
-msgstr ""
+msgstr "Cor do texto no rodapé"
 
 #: library/customizer/header/index.php:10
 msgid "Header"
-msgstr ""
+msgstr "Cabeçalho"
 
 #: library/menus.php:6
 msgid "Main menu"
-msgstr ""
+msgstr "Menu principal"
 
 #: library/menus.php:9
 msgid "Social networks"
-msgstr ""
+msgstr "Redes sociais"
 
 #: library/menus.php:10
 msgid "Footer menu 1"
-msgstr ""
+msgstr "Menu de rodapé 1"
 
 #: library/menus.php:11
 msgid "Footer menu 2"
-msgstr ""
+msgstr "Menu de rodapé 2"
 
 #: library/menus.php:12
 msgid "Footer menu 3"
-msgstr ""
+msgstr "Menu de rodapé 3"
 
 #: library/menus.php:13
 msgid "Footer menu 4"
-msgstr ""
+msgstr "Menu de rodapé 4"
 
 #: library/settings.php:14
 msgid "Address"
-msgstr ""
+msgstr "Endereço"
 
 #: library/settings.php:17
 msgid "Words count in auto summary (excerpt)"
-msgstr ""
+msgstr "Contagem de palavras no resumo automático (excerpt)"
 
 #. Template Name of the theme
 msgid "Page with anchors"
-msgstr ""
+msgstr "Página com âncoras"
 
 #: page-anchor.php:12
 msgid "Sections"
-msgstr ""
+msgstr "Seções"
 
-#: single.php:50
-#: template-parts/share-links.php:2
+#: single.php:50 template-parts/share-links.php:2
 msgid "Share"
-msgstr ""
+msgstr "Compartilhar"
 
 #. Template Name of the theme
 msgid "Pagebuilder without titles"
-msgstr ""
+msgstr "Pagebuilder sem títulos"
 
 #: template-parts/archive-title.php:3
 msgid "results found"
-msgstr ""
+msgstr "resultados encontrados"
 
 #: template-parts/authors-list.php:7
 msgid "Authors"
-msgstr ""
+msgstr "Autores"
 
 #: template-parts/authors-list.php:7
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #: template-parts/card.php:37
 msgid "By:"
-msgstr ""
+msgstr "Por:"
 
 #: template-parts/card.php:43
 msgid "published on"
-msgstr ""
+msgstr "publicado em"
 
 #: template-parts/content/timeline.php:23
 msgid "Timeline"
-msgstr ""
+msgstr "Linha do tempo"
 
 #: template-parts/related-posts.php:10
 msgid "Read Also"
-msgstr ""
+msgstr "Ler também"
 
 #: template-parts/site-by-hacklab.php:2
 msgid "site by"
-msgstr ""
+msgstr "site por"
 
 #: template-parts/title/author.php:6
 msgid "Author: %s"
-msgstr ""
+msgstr "Autor: %s"
 
 #: template-parts/title/perguntas-frequentes.php:3
 msgid "Frequently Asked Questions"
-msgstr ""
+msgstr "Perguntas Frequentes"
 
 #: template-parts/title/perguntas-frequentes.php:7
 msgid "Clear"
-msgstr ""
+msgstr "Limpar"
 
 #: template-parts/title/search.php:9
 msgid "You searched for:"
-msgstr ""
+msgstr "Você perguntou por:"
 
 #: template-parts/title/search.php:11
 msgid "Search"
-msgstr ""
+msgstr "Pesquisar"
 
 #: theme.json
 msgctxt "Color name"
 msgid "Primary pure"
-msgstr ""
+msgstr "Primária pura"
 
 #: theme.json
 msgctxt "Color name"
 msgid "Primary light"
-msgstr ""
+msgstr "Primária clara"
 
 #: theme.json
 msgctxt "Color name"
 msgid "Primary dark"
-msgstr ""
+msgstr "Primária escura"
 
 #: theme.json
 msgctxt "Color name"
 msgid "Secondary pure"
-msgstr ""
+msgstr "Secundária pura"
 
 #: theme.json
 msgctxt "Color name"
 msgid "Secondary light"
-msgstr ""
+msgstr "Secundária clara"
 
 #: theme.json
 msgctxt "Color name"
 msgid "Secondary dark"
-msgstr ""
+msgstr "Secundária escura"
 
 #: theme.json
 msgctxt "Color name"
 msgid "Low Pure"
-msgstr ""
+msgstr "Baixa pura"
 
 #: theme.json
 msgctxt "Color name"
 msgid "Low light"
-msgstr ""
+msgstr "Baixa clara"
 
 #: theme.json
 msgctxt "Color name"
 msgid "Low dark"
-msgstr ""
+msgstr "Baixa escura"
 
 #: theme.json
 msgctxt "Color name"
 msgid "High pure"
-msgstr ""
+msgstr "Alta pura"
 
 #: theme.json
 msgctxt "Color name"
 msgid "High light"
-msgstr ""
+msgstr "Alta clara"
 
 #: theme.json
 msgctxt "Color name"
 msgid "High dark"
-msgstr ""
+msgstr "Alta escura"
 
 #: theme.json
 msgctxt "Color name"
 msgid "Warning pure"
-msgstr ""
+msgstr "Atenção pura"
 
 #: theme.json
 msgctxt "Color name"
 msgid "Warning light"
-msgstr ""
+msgstr "Atenção clara"
 
 #: theme.json
 msgctxt "Color name"
 msgid "Warning dark"
-msgstr ""
+msgstr "Atenção escura"
 
 #: theme.json
 msgctxt "Color name"
 msgid "Helper pure"
-msgstr ""
+msgstr "Ajuda pura"
 
 #: theme.json
 msgctxt "Color name"
 msgid "Helper light"
-msgstr ""
+msgstr "Ajuda clara"
 
 #: theme.json
 msgctxt "Color name"
 msgid "Helper dark"
-msgstr ""
+msgstr "Ajuda escura"
 
 #: theme.json
 msgctxt "Font size name"
 msgid "Very small"
-msgstr ""
+msgstr "Muito pequena"
 
 #: theme.json
 msgctxt "Font size name"
 msgid "Small"
-msgstr ""
+msgstr "Pequena"
 
 #: theme.json
 msgctxt "Font size name"
 msgid "Default"
-msgstr ""
+msgstr "Padrão"
 
 #: theme.json
 msgctxt "Font size name"
 msgid "Intermediate standard"
-msgstr ""
+msgstr "Padrão intermediária"
 
 #: theme.json
 msgctxt "Font size name"
 msgid "Medium"
-msgstr ""
+msgstr "Média"
 
 #: theme.json
 msgctxt "Font size name"
 msgid "Large"
-msgstr ""
+msgstr "Grande"
 
 #: theme.json
 msgctxt "Font size name"
 msgid "Intermediate large"
-msgstr ""
+msgstr "Grande intermediária"
 
 #: theme.json
 msgctxt "Font size name"
 msgid "Really large"
-msgstr ""
+msgstr "Muito grande"
 
 #: theme.json
 msgctxt "Font size name"
 msgid "So large"
-msgstr ""
+msgstr "Tão grande"
 
 #: theme.json
 msgctxt "Font size name"
 msgid "Bigger"
-msgstr ""
+msgstr "Maior"
 
 #: theme.json
 msgctxt "Font size name"
 msgid "Giant"
-msgstr ""
+msgstr "Gigante"
+
+#~ msgid "What are you looking for?"
+#~ msgstr "O que você está procurando?"
