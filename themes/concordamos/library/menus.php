@@ -50,3 +50,14 @@ function sempre_hamburguer($files){
     return $files;
 }
 
+function wp_nav_menu_items( $items, $args ) {
+	if ( $args->theme_location === 'main-menu' && ! empty( \Concordamos\get_wpml_locales() ) ) {
+		$template = file_get_contents( __DIR__ . '/twig/wpml-dropdown.twig' );
+		$shortcode = '[wpml_language_switcher]' . $template . '[/wpml_language_switcher]';
+
+		$items .= do_shortcode($shortcode);
+	}
+
+	return $items;
+}
+add_filter( 'wp_nav_menu_items', 'jaci\wp_nav_menu_items', 100, 2 );

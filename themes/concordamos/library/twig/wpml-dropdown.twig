@@ -1,0 +1,19 @@
+{% set current_language = languages[ current_language_code ] %}
+
+{% if languages|length > 1 %}
+<li class="menu-item menu-item-has-children {{ current_language.css_classes }}">
+	<a title="{{ current_language.native_name }}" href="{{ current_language.url }}">
+		<span class="{{ css_classes_link }}" lang="{{ current_language.code }}">{{ current_language.code|upper }}</span>
+	</a>
+	<i class="fas fa-angle-down"></i>
+	<ul class="sub-menu">
+	{% for language in languages if not language.is_current %}
+		<li class="menu-item {{ language.css_classes }}">
+			<a title="{{ language.native_name }}" href="{{ language.url }}">
+				<span class="{{ css_classes_link }}" lang="{{ language.code }}">{{ language.code|upper }}</span>
+			</a>
+		</li>
+	{% endfor %}
+	</ul>
+</li>
+{% endif %}
