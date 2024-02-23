@@ -1,11 +1,11 @@
 @use "./../2-atoms/a-mixins" as mixins;
 @use "./../1-settings/s-variables" as variables;
 
-.page-sobre {
+.page-sobre, .page-about, .page-acerca {
     #app {
         @include mixins.tablet{
             overflow-x: initial;
-            
+
         }
         .wp-block-cover__inner-container {
             max-width: 1170px;
@@ -27,7 +27,7 @@
                     margin-bottom: 0;
                 }
                 @include mixins.small{
-                    font-size: 3rem;    
+                    font-size: 3rem;
                 }
             }
         }
@@ -42,7 +42,7 @@
             .wp-block-columns{
                 @media (max-width: 781px){
                     margin-bottom: 0;
-                }    
+                }
             }
             .mission-column{
                 margin-top: 30px;
@@ -67,7 +67,7 @@
                 @media (max-width: 781px){
                     margin-left: 0;
                     margin-top: 40px;
-                }    
+                }
             }
         }
 
@@ -86,7 +86,7 @@
                 margin-top: 60px;
                 @media(max-width: 781px){
                     margin-bottom: 0;
-                    margin-top: 0;   
+                    margin-top: 0;
                 }
             }
 
@@ -97,7 +97,7 @@
                 @media(max-width: 781px){
                     display: none;
                 }
-                
+
 
                 h2 {
                     color: var(--wp--preset--color--primary-pure);
@@ -122,7 +122,7 @@
                         font-size: 3rem;
                         margin-top: 40px;
                     }
-                }   
+                }
             }
         }
 
@@ -135,7 +135,7 @@
                 padding-left: 0;
                 padding-right: 0;
                 padding-bottom: 60px;
-                
+
             }
 
             h2{
@@ -159,7 +159,7 @@
                     text-align: left;
                     margin-bottom: 13px;
                 }
-                
+
             }
 
             .wp-block-columns{
@@ -168,12 +168,12 @@
                 @media(max-width: 1100px){
                     gap: 1rem;
                 }
-                @media(max-width: 601px){   
+                @media(max-width: 601px){
                     gap: 0.5rem;
                     display: flex;
                     justify-content: space-around;
                 }
-                
+
             }
 
             .employee-card {
@@ -187,7 +187,7 @@
                 @media(max-width: 1100px){
                     padding: 15px;
                 }
-               
+
                 @media(max-width: 601px){
                     max-width: 160px;
                     height: auto;
@@ -199,7 +199,7 @@
                     @media(max-width: 1100px){
                         width: 72px;
                         height: auto;
-                    } 
+                    }
                 }
 
                 h4 {
@@ -239,12 +239,12 @@
             border-top: 3px solid #000;
             @media(max-width: 781px){
                 padding-top: 60px;
-                padding-bottom: 0;    
+                padding-bottom: 0;
             }
             .wp-block-columns{
                 @media(max-width: 781px){
                     margin-bottom: 0;
-                }    
+                }
             }
             .text-column{
                 padding-top: 0;
@@ -252,16 +252,16 @@
                     margin-top: 0;
                     margin-bottom: 20px;
                     @media(max-width: 781px){
-                        font-size: 3rem;    
+                        font-size: 3rem;
                     }
-                    
+
                 }
                 h3{
                     font-size: 1.225rem;
                     margin-top: 10px;
                     font-family: 'Inter';
                     font-weight: 600;
-                }    
+                }
             }
             .plugin-test-column{
                 margin-top: 20px;
@@ -270,7 +270,7 @@
                         height: auto;
                         margin-top: 0;
                     }
-                    
+
                 }
                 h2{
                     font-size: 3rem !important;
@@ -310,6 +310,6 @@
         @include mixins.small{
             bottom: 93px;
         }
-        
+
     }
 }
