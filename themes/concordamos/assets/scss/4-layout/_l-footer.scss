@@ -77,4 +77,16 @@ footer.main-footer {
             }
         }  
     }
+    .site-by-hacklab{
+        display: flex;
+        justify-content: center;
+        & span{
+            margin-right: 8px;
+
+        }
+        b{
+            color:red;
+        }
+    }
+    
 }

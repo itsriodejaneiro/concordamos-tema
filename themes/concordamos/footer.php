@@ -8,7 +8,10 @@
                 <?php dynamic_sidebar('footer_widgets') ?>
             </div>
         </div>
-    </div>   
+    </div>
+    
+    <?php get_template_part( 'template-parts/site-by-hacklab' ); ?>
+    
 </footer>
 <?php wp_footer() ?>
 
