@@ -80,13 +80,19 @@ footer.main-footer {
     .site-by-hacklab{
         display: flex;
         justify-content: center;
+        height: 30px;
+        align-items: center;
         & span{
             margin-right: 8px;
 
         }
-        b{
+        & a{
+            font-size: 20px;
+        }
+        & b{
             color:red;
         }
     }
+   
     
 }
