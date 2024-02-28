@@ -28,7 +28,7 @@ footer.main-footer {
     }
 
     .footer-logo{
-        margin: 42px 0 42px 0;  
+        margin: 42px 0 42px 0;
         max-width: 370px;
         width: 100%;
     }
@@ -54,7 +54,7 @@ footer.main-footer {
         gap: 76px;
 
         @include mixins.mobile{
-            gap: 32px;    
+            gap: 32px;
         }
 
         figure:nth-child(1){
@@ -63,7 +63,7 @@ footer.main-footer {
     }
 
     @include mixins.tablet{
-        
+
         .footer-logo-column {
             text-align: center;
 
@@ -75,7 +75,7 @@ footer.main-footer {
             .footer-menu-second-column{
                 margin-top: -20px;
             }
-        }  
+        }
     }
     .site-by-hacklab{
         display: flex;
@@ -83,16 +83,17 @@ footer.main-footer {
         height: 30px;
         align-items: center;
         & span{
+			color: white;
             margin-right: 8px;
-
         }
         & a{
+			color: white;
             font-size: 20px;
         }
         & b{
             color:red;
         }
     }
-   
-    
+
+
 }
