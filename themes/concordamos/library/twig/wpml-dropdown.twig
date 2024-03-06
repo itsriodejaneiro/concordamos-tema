@@ -7,7 +7,7 @@
 	</a>
 	<i class="fas fa-angle-down"></i>
 	<ul class="sub-menu">
-	{% for language in languages if not (language.is_current or language.code == 'es') %}
+	{% for language in languages if not language.is_current %}
 		<li class="menu-item {{ language.css_classes }}">
 			<a title="{{ language.native_name }}" href="{{ language.url }}">
 				<span class="{{ css_classes_link }}" lang="{{ language.code }}">{{ language.code|upper }}</span>

@@ -50,18 +50,6 @@ function sempre_hamburguer($files){
     return $files;
 }
 
-function disable_spanish ( $languages ) {
-	$filtered = array();
-	foreach ( $languages as $language ) {
-		if ( $language['key'] !== 'es_ES' ) {
-			$filtered[] = $language;
-		}
-	}
-	return $filtered;
-}
-
-add_filter( 'concordamos_language_options', 'jaci\disable_spanish' );
-
 function wp_nav_menu_items( $items, $args ) {
 	if ( $args->theme_location === 'main-menu' && ! empty( \Concordamos\get_wpml_locales() ) ) {
 		$template = file_get_contents( __DIR__ . '/twig/wpml-dropdown.twig' );
